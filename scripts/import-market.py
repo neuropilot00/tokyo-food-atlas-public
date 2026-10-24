@@ -15,6 +15,12 @@ import urllib.parse
 import urllib.request
 
 
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    """Never forward Site authentication headers to a redirected origin."""
+    def redirect_request(self, *args, **kwargs):
+        return None
+
+
 def read_config():
     old = None
     if sys.stdin.isatty():
@@ -54,13 +60,14 @@ def main():
         if len(raw) != item['bytes'] or hashlib.sha256(raw).hexdigest() != item['sha256']:
             raise ValueError('Snapshot integrity mismatch: ' + item['path'])
     headers = {'OAI-Sites-Authorization': 'Bearer ' + config['siteToken'], 'X-Atlas-Import-Secret': config['importSecret'], 'Content-Type': 'application/json', 'Accept': 'application/json'}
+    opener = urllib.request.build_opener(NoRedirect())
 
     def api(path, method='GET', value=None, raw=None):
         payload = raw if raw is not None else json.dumps(value, ensure_ascii=False).encode() if value is not None else None
         for attempt in range(4):
             try:
                 request = urllib.request.Request(base + path, data=payload, headers=headers, method=method)
-                with urllib.request.urlopen(request, timeout=45) as response:
+                with opener.open(request, timeout=45) as response:
                     return json.load(response)
             except urllib.error.HTTPError as error:
                 if error.code in [429, 502, 503, 504] and attempt < 3:
