@@ -1,0 +1,493 @@
+{
+  "schemaVersion": 1,
+  "verifiedOn": "2026-10-24",
+  "country": "KR",
+  "coverageNote": "서울 6개 상권별 동네 주변 조사후보 2개씩, 총 12개입니다. 경쟁점 전수조사·반경 검색·공식 상권 내부 점포 목록이 아닙니다. 음식점 6개와 카페 6개를 포함합니다.",
+  "verificationNote": "확인일은 출처 원문을 대조한 날짜입니다. 출처의 최종 수정일이나 점포의 현재 영업 확인일과 다릅니다.",
+  "customerAgeNote": "모든 점포의 실제 구매 고객 연령은 unknown입니다. 상권 인구 연령이나 외모로 점포 고객 연령을 추정하지 않습니다.",
+  "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+  "observationNote": "관측할 시간대는 조사자가 비교할 구간을 정한 제안입니다. 방문·매출·혼잡 실측이 아닙니다.",
+  "defaultNotes": [
+    "공식 페이지의 점포명·주소를 확인한 조사후보입니다. 현재 영업 여부는 현장·전화로 검증하지 않았습니다.",
+    "실제 구매 고객의 연령·매출·방문량을 확보하지 않았습니다.",
+    "관측 시간대는 현장 조사 계획이며 실제 혼잡 시간 예측이 아닙니다."
+  ],
+  "rivals": [
+    {
+      "id": "kr-seongsu-onion",
+      "country": "KR",
+      "areaId": "3110131",
+      "areaName": "성수동카페거리",
+      "name": "어니언 성수",
+      "category": "카페",
+      "address": "서울특별시 성동구 아차산로9길 8",
+      "sourceUrl": "https://www.onionkr.com/artfinger/offline.html?cate_no=26",
+      "sourceTitle": "카페 어니언 공식 매장 안내",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "12:00",
+          "to": "14:00",
+          "purpose": "입장·포장 건수, 대기, 좌석 점유를 같은 간격으로 기록"
+        },
+        {
+          "dayType": "토요일",
+          "from": "14:00",
+          "to": "16:00",
+          "purpose": "평일과 비교할 오후 이용·체류·포장 수요 관찰"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "영문 공식 도로명주소를 한국어 도로명 표기로 옮겼습니다."
+      ]
+    },
+    {
+      "id": "kr-seongsu-midoin",
+      "country": "KR",
+      "areaId": "3110131",
+      "areaName": "성수동카페거리",
+      "name": "미도인 성수",
+      "category": "덮밥·스테이크",
+      "address": "서울특별시 성동구 연무장7가길 3 1층",
+      "sourceUrl": "https://midoin.co.kr/page/store.php",
+      "sourceTitle": "미도인 공식 매장 찾기",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "11:30",
+          "to": "13:30",
+          "purpose": "점심 대기, 좌석 회전, 배달·포장 건수 관찰"
+        },
+        {
+          "dayType": "금요일",
+          "from": "18:00",
+          "to": "20:00",
+          "purpose": "저녁 입장·대기·동행 인원 수와 점심 차이 기록"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "업종은 공식 브랜드 메뉴 분류를 요약했습니다. 지점별 취급 메뉴는 별도 확인이 필요합니다."
+      ]
+    },
+    {
+      "id": "kr-yeonnam-tailor",
+      "country": "KR",
+      "areaId": "3120104",
+      "areaName": "연남동(홍대)",
+      "name": "테일러커피 연남점",
+      "category": "카페",
+      "address": "서울특별시 마포구 성미산로 189 1층",
+      "sourceUrl": "https://tailorcoffee.com/_idio/inc/sub2.html",
+      "sourceTitle": "테일러커피 공식 매장 안내",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "12:00",
+          "to": "14:00",
+          "purpose": "입장·포장 건수, 대기, 좌석 점유를 같은 간격으로 기록"
+        },
+        {
+          "dayType": "토요일",
+          "from": "14:00",
+          "to": "16:00",
+          "purpose": "평일과 비교할 오후 이용·체류·포장 수요 관찰"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": []
+    },
+    {
+      "id": "kr-yeonnam-slowcali",
+      "country": "KR",
+      "areaId": "3120104",
+      "areaName": "연남동(홍대)",
+      "name": "슬로우캘리 연남본점",
+      "category": "포케·샐러드",
+      "address": "서울특별시 마포구 동교로38길 35 2층",
+      "sourceUrl": "https://slowcali.co.kr/bbs/content.php?co_id=store",
+      "sourceTitle": "슬로우캘리 공식 매장 소개",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "11:30",
+          "to": "13:30",
+          "purpose": "홀 식사·포장·배달 이용 비중과 대기 관찰"
+        },
+        {
+          "dayType": "토요일",
+          "from": "12:00",
+          "to": "14:00",
+          "purpose": "주말 점심 이용과 평일 차이 기록"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "업종은 공식 브랜드 메뉴 분류를 요약했습니다. 지점별 취급 메뉴는 별도 확인이 필요합니다."
+      ]
+    },
+    {
+      "id": "kr-yeoksam-bluebottle",
+      "country": "KR",
+      "areaId": "3120197",
+      "areaName": "역삼역",
+      "name": "블루보틀 역삼 카페",
+      "category": "카페",
+      "address": "서울특별시 강남구 테헤란로 129",
+      "sourceUrl": "https://kr.bluebottlecoffee.com/pages/cafe-list",
+      "sourceTitle": "블루보틀 커피 코리아 공식 카페 목록",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "08:00",
+          "to": "09:00",
+          "purpose": "출근 시간 입장·포장 건수 관찰"
+        },
+        {
+          "dayType": "평일",
+          "from": "12:00",
+          "to": "13:30",
+          "purpose": "점심 시간 대기·좌석 점유·포장 건수 비교"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": []
+    },
+    {
+      "id": "kr-yeoksam-coco-gfc",
+      "country": "KR",
+      "areaId": "3120197",
+      "areaName": "역삼역",
+      "name": "코코이찌방야 역삼GFC점",
+      "category": "일식 카레",
+      "address": "서울특별시 강남구 테헤란로 152 강남파이낸스센터 지하1층",
+      "sourceUrl": "https://m.cocoichibanya.co.kr/customercenter/show_shop?strSeq=70",
+      "sourceTitle": "코코이찌방야 공식 역삼GFC점 안내",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "11:30",
+          "to": "13:30",
+          "purpose": "점심 대기, 좌석 회전, 배달·포장 건수 관찰"
+        },
+        {
+          "dayType": "금요일",
+          "from": "18:00",
+          "to": "20:00",
+          "purpose": "저녁 입장·대기·동행 인원 수와 점심 차이 기록"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "공식 안내의 평일 운영 표기를 참고해 관측 계획도 평일로 구성했습니다.",
+        "공식 공통 메뉴북이 있으나 매장별 가격이 다를 수 있어 이 지점의 현재 가격으로 입력하지 않았습니다."
+      ]
+    },
+    {
+      "id": "kr-euljiro-coffeehanyakbang",
+      "country": "KR",
+      "areaId": "3120031",
+      "areaName": "을지로3가역",
+      "name": "커피한약방",
+      "category": "카페·디저트",
+      "address": "서울특별시 중구 삼일대로12길 16-6",
+      "sourceUrl": "https://korean.visitseoul.net/restaurants/coffeehanyakbang/KOPyiaqhs",
+      "sourceTitle": "서울관광재단 Visit Seoul · 커피한약방",
+      "sourceType": "official_tourism",
+      "sourceUpdatedOn": "2026-09-03",
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "12:00",
+          "to": "14:00",
+          "purpose": "입장·포장 건수, 대기, 좌석 점유를 같은 간격으로 기록"
+        },
+        {
+          "dayType": "토요일",
+          "from": "14:00",
+          "to": "16:00",
+          "purpose": "평일과 비교할 오후 이용·체류·포장 수요 관찰"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "주소는 점포 공식 사이트의 사업자 소재지 대신 서울관광재단의 방문용 점포주소를 사용했습니다."
+      ]
+    },
+    {
+      "id": "kr-euljiro-ogu",
+      "country": "KR",
+      "areaId": "3120031",
+      "areaName": "을지로3가역",
+      "name": "오구반점",
+      "category": "중식",
+      "address": "서울특별시 중구 수표로 60",
+      "sourceUrl": "https://korean.visitseoul.net/restaurants/%EC%98%A4%EA%B5%AC%EB%B0%98%EC%A0%90/KOP011594",
+      "sourceTitle": "서울관광재단 Visit Seoul · 오구반점",
+      "sourceType": "official_tourism",
+      "sourceUpdatedOn": "2026-06-24",
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "11:30",
+          "to": "13:30",
+          "purpose": "점심 대기, 좌석 회전, 배달·포장 건수 관찰"
+        },
+        {
+          "dayType": "금요일",
+          "from": "18:00",
+          "to": "20:00",
+          "purpose": "저녁 입장·대기·동행 인원 수와 점심 차이 기록"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "서울관광재단의 '1만원대' 표기는 특정 메뉴·인원·구성 기준이 없어 정확한 메뉴가격이나 객단가로 사용하지 않았습니다.",
+        "공식 관광정보에는 일요일·공휴일 휴무로 기재되어 있어 평일 관측을 제안합니다."
+      ]
+    },
+    {
+      "id": "kr-hongdae-bluebottle",
+      "country": "KR",
+      "areaId": "3120103",
+      "areaName": "홍대입구역(홍대)",
+      "name": "블루보틀 홍대 카페",
+      "category": "카페",
+      "address": "서울특별시 마포구 양화로 130 라이즈 호텔 1층 로비",
+      "sourceUrl": "https://kr.bluebottlecoffee.com/pages/cafe-list",
+      "sourceTitle": "블루보틀 커피 코리아 공식 카페 목록",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "12:00",
+          "to": "14:00",
+          "purpose": "입장·포장 건수, 대기, 좌석 점유를 같은 간격으로 기록"
+        },
+        {
+          "dayType": "토요일",
+          "from": "14:00",
+          "to": "16:00",
+          "purpose": "평일과 비교할 오후 이용·체류·포장 수요 관찰"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": []
+    },
+    {
+      "id": "kr-hongdae-midoin",
+      "country": "KR",
+      "areaId": "3120103",
+      "areaName": "홍대입구역(홍대)",
+      "name": "미도인 홍대",
+      "category": "덮밥·스테이크",
+      "address": "서울특별시 마포구 잔다리로2길 19 1층",
+      "sourceUrl": "https://midoin.co.kr/page/store.php",
+      "sourceTitle": "미도인 공식 매장 찾기",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "11:30",
+          "to": "13:30",
+          "purpose": "점심 대기, 좌석 회전, 배달·포장 건수 관찰"
+        },
+        {
+          "dayType": "금요일",
+          "from": "18:00",
+          "to": "20:00",
+          "purpose": "저녁 입장·대기·동행 인원 수와 점심 차이 기록"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "업종은 공식 브랜드 메뉴 분류를 요약했습니다. 지점별 취급 메뉴는 별도 확인이 필요합니다."
+      ]
+    },
+    {
+      "id": "kr-hapjeong-anthracite",
+      "country": "KR",
+      "areaId": "3120101",
+      "areaName": "합정역",
+      "name": "앤트러사이트 합정점",
+      "category": "카페",
+      "address": "서울특별시 마포구 토정로5길 10",
+      "sourceUrl": "https://anthracitecoffee.com/visit",
+      "sourceTitle": "앤트러사이트 공식 Visit · 합정점",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "12:00",
+          "to": "14:00",
+          "purpose": "입장·포장 건수, 대기, 좌석 점유를 같은 간격으로 기록"
+        },
+        {
+          "dayType": "토요일",
+          "from": "14:00",
+          "to": "16:00",
+          "purpose": "평일과 비교할 오후 이용·체류·포장 수요 관찰"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "공식 페이지에서 층 표기가 일치하지 않아 주소에는 층수를 넣지 않았습니다."
+      ]
+    },
+    {
+      "id": "kr-hapjeong-coco",
+      "country": "KR",
+      "areaId": "3120101",
+      "areaName": "합정역",
+      "name": "코코이찌방야 합정역 메세나폴리스점",
+      "category": "일식 카레",
+      "address": "서울특별시 마포구 양화로 45 메세나폴리스 2층",
+      "sourceUrl": "https://m.cocoichibanya.co.kr/customercenter/shop_index",
+      "sourceTitle": "코코이찌방야 공식 매장 안내",
+      "sourceType": "brand_official",
+      "sourceUpdatedOn": null,
+      "verifiedOn": "2026-10-24",
+      "operatingStatus": "not_verified",
+      "operatingStatusLabel": "현재 영업 여부 미검증",
+      "actualCustomerAge": "unknown",
+      "actualCustomerAgeLabel": "실제 고객 연령 미확보",
+      "boundaryStatus": "not_verified",
+      "boundaryNote": "동네 주변 조사후보 · 공식 상권 경계 내 여부 미검증",
+      "observationWindows": [
+        {
+          "dayType": "평일",
+          "from": "11:30",
+          "to": "13:30",
+          "purpose": "점심 대기·좌석 회전·포장 건수 관찰"
+        },
+        {
+          "dayType": "토요일",
+          "from": "18:00",
+          "to": "20:00",
+          "purpose": "주말 저녁 이용과 평일 점심 차이 비교"
+        }
+      ],
+      "observationBasis": "현장 조사 계획 · 실제 혼잡 시간 예측 아님",
+      "price": null,
+      "priceNote": "점포별 현재 메뉴·금액을 원문에서 확정하지 못해 미입력 · 객단가 미확보",
+      "notes": [
+        "공식 공통 메뉴북이 있으나 매장별 가격이 다를 수 있어 이 지점의 현재 가격으로 입력하지 않았습니다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#183f32">
+  <meta name="description" content="창업 예산과 운영 조건에 맞는 음식점 업종을 찾고, 상권·경쟁점·상가 매물·손익을 비교하는 모바일 출점 도구.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>상권 Atlas · 내 가게의 첫 번째 결정</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.15.0/dist/maplibre-gl.css">
+  <script src="domain.js" defer></script>
+  <script src="recommend.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="desktop-sidebar">
+    <a class="brand" href="#discover"><span class="brand-symbol">a</span><span>상권 Atlas<small>내 가게의 첫 번째 결정</small></span></a>
+    <p class="sidebar-label">출점 워크스페이스</p>
+    <nav id="desktop-nav" aria-label="PC 주 메뉴"></nav>
+    <div class="sidebar-bottom"><span class="live-dot"></span> 근거가 있는 창업 검토<p>사람과 경쟁, 공간과 비용을<br>하나의 결정으로 연결합니다.</p><button class="text-button" data-action="sources">자료와 서비스 범위 ↗</button></div>
+  </aside>
+  <div class="app-shell">
+    <header class="app-header">
+      <a href="#discover" class="mobile-brand"><span class="brand-symbol">a</span>상권 Atlas</a>
+      <span class="desktop-breadcrumb" id="breadcrumb">출점 리서치 / 업종 찾기</span>
+      <div class="header-actions"><label class="country-control"><span class="sr-only">분석 국가</span><select id="country-select"><option value="KR">한국 · 서울</option><option value="JP">일본 · 도쿄</option></select></label><button class="icon-button" data-action="sources" aria-label="데이터 출처와 서비스 범위">ⓘ</button></div>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading-state">상권 자료를 준비하고 있습니다…</div></main>
+    <footer class="app-footer"><b>상권 Atlas</b><span>공식 자료·공개 매물 확인 2026.10.24</span><button class="text-button" data-action="sources">출처·기준일</button></footer>
+  </div>
+  <nav class="bottom-nav" id="mobile-nav" aria-label="모바일 주 메뉴"></nav>
+  <dialog id="detail-dialog"><div class="dialog-head"><h2 id="dialog-title">상세 정보</h2><button class="icon-button" id="dialog-close" aria-label="닫기">×</button></div><div id="dialog-body"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

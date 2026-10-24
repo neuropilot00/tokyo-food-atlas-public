@@ -1,0 +1,827 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-24",
+  "latest_quarter_found": "20262",
+  "coverage": "6 selected Seoul commercial areas extracted from full official CSV files; not API sample rows",
+  "sources": [
+    {
+      "id": "OA-15584",
+      "url": "https://data.seoul.go.kr/dataList/OA-15584/A/1/datasetView.do",
+      "file": "/workspace/scratch/a8538c696166/korea-inputs/resident.csv",
+      "retrieval_method": "Official public CSV download form POST",
+      "download_url": "https://datafile.seoul.go.kr/bigfile/iot/sheet/csv/download.do",
+      "download_form": {
+        "srvType": "S",
+        "infId": "OA-15584",
+        "serviceKind": "1",
+        "pageNo": "1",
+        "ssUserId": "SAMPLE_VIEW",
+        "strWhere": "",
+        "strOrderby": "STDR_YYQU_CD DESC",
+        "filterCol": "",
+        "txtFilter": ""
+      },
+      "row_count": 35908,
+      "latest_quarter": "20262",
+      "license": "공공누리 제1유형 출처표시 (상업적 이용 및 변경 가능)"
+    },
+    {
+      "id": "OA-15569",
+      "url": "https://data.seoul.go.kr/dataList/OA-15569/A/1/datasetView.do",
+      "file": "/workspace/scratch/a8538c696166/korea-inputs/worker.csv",
+      "retrieval_method": "Official public CSV download form POST",
+      "download_url": "https://datafile.seoul.go.kr/bigfile/iot/sheet/csv/download.do",
+      "download_form": {
+        "srvType": "S",
+        "infId": "OA-15569",
+        "serviceKind": "1",
+        "pageNo": "1",
+        "ssUserId": "SAMPLE_VIEW",
+        "strWhere": "",
+        "strOrderby": "STDR_YYQU_CD DESC",
+        "filterCol": "",
+        "txtFilter": ""
+      },
+      "row_count": 36027,
+      "latest_quarter": "20262",
+      "license": "공공누리 제1유형 출처표시 (상업적 이용 및 변경 가능)"
+    },
+    {
+      "id": "OA-15568",
+      "url": "https://data.seoul.go.kr/dataList/OA-15568/A/1/datasetView.do",
+      "file": "/workspace/scratch/a8538c696166/korea-inputs/flow.csv",
+      "retrieval_method": "Official public CSV download form POST",
+      "download_url": "https://datafile.seoul.go.kr/bigfile/iot/sheet/csv/download.do",
+      "download_form": {
+        "srvType": "S",
+        "infId": "OA-15568",
+        "serviceKind": "1",
+        "pageNo": "1",
+        "ssUserId": "SAMPLE_VIEW",
+        "strWhere": "",
+        "strOrderby": "STDR_YYQU_CD DESC",
+        "filterCol": "",
+        "txtFilter": ""
+      },
+      "row_count": 36281,
+      "latest_quarter": "20262",
+      "license": "공공누리 제1유형 출처표시 (상업적 이용 및 변경 가능)"
+    },
+    {
+      "id": "OA-15560",
+      "url": "https://data.seoul.go.kr/dataList/OA-15560/A/1/datasetView.do",
+      "file": "/workspace/scratch/a8538c696166/korea-inputs/areas.csv",
+      "retrieval_method": "Official public CSV download form POST",
+      "download_url": "https://datafile.seoul.go.kr/bigfile/iot/sheet/csv/download.do",
+      "download_form": {
+        "srvType": "S",
+        "infId": "OA-15560",
+        "serviceKind": "1",
+        "pageNo": "1",
+        "ssUserId": "SAMPLE_VIEW",
+        "strWhere": "",
+        "strOrderby": "",
+        "filterCol": "",
+        "txtFilter": ""
+      },
+      "row_count": 1650,
+      "latest_quarter": null,
+      "license": "공공누리 제1유형 출처표시 (상업적 이용 및 변경 가능)"
+    }
+  ],
+  "methodology_url": "https://golmok.seoul.go.kr/introduce.do",
+  "areas": [
+    {
+      "id": "3110131",
+      "name": "성수동카페거리",
+      "name_ko": "성수동카페거리",
+      "country": "KR",
+      "municipality": "서울특별시",
+      "district": "성동구",
+      "administrative_neighborhood": "성수2가1동",
+      "administrative_neighborhood_code": "11200670",
+      "geography_type": "골목상권",
+      "geography_type_code": "A",
+      "geography_definition": "서울시 상권분석서비스의 지정 상권 영역. 행정동 전체와 다름.",
+      "area_m2": 131865,
+      "source_xy": {
+        "crs": "EPSG:5181",
+        "x": 204716,
+        "y": 449234
+      },
+      "residents": {
+        "total": 2191,
+        "age_groups": {
+          "연령대10(원자료)": 191,
+          "20-39": 851,
+          "40-59": 609,
+          "60+": 540
+        },
+        "age_groups_native": {
+          "10": 191,
+          "20": 406,
+          "30": 445,
+          "40": 276,
+          "50": 333,
+          "60+": 540
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "서울시 주민등록주소 기반 상주인구 DB",
+        "unit": "명",
+        "source_id": "OA-15584",
+        "source_csv_row": 1504,
+        "source_update_rule": "4분기 1회 갱신 후 다음 해 1~3분기 동일값, 원천 기준일 미확인"
+      },
+      "economy": {
+        "workers": 4421,
+        "worker_label": "직장인구(SKT 기반)",
+        "age_groups_native": {
+          "10": 8,
+          "20": 959,
+          "30": 1252,
+          "40": 1039,
+          "50": 767,
+          "60+": 396
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "SKT 가입자 기반 직장인구 DB에서 산출. 일본 민영사업체 센서스 종사자와 정의가 다름.",
+        "unit": "명",
+        "source_id": "OA-15569",
+        "source_csv_row": 1512,
+        "estimated": true
+      },
+      "flow": {
+        "raw_total": 1130942,
+        "raw_total_label": "총_유동인구_수",
+        "display_label": "상권 생활인구 원자료 지표",
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "age_groups_native": {
+          "10": 119033,
+          "20": 336577,
+          "30": 279186,
+          "40": 179801,
+          "50": 121094,
+          "60+": 95251
+        },
+        "age_groups": {
+          "연령대10(원자료)": 119033,
+          "20-39": 615763,
+          "40-59": 300895,
+          "60+": 95251
+        },
+        "age20_39_share": 0.5444691239692221,
+        "time_bands": {
+          "00_06": 112715,
+          "06_11": 199974,
+          "11_14": 230701,
+          "14_17": 260925,
+          "17_21": 246763,
+          "21_24": 79866
+        },
+        "weekday_values": {
+          "월요일": 167721,
+          "화요일": 169001,
+          "수요일": 166811,
+          "목요일": 171795,
+          "금요일": 177901,
+          "토요일": 147290,
+          "일요일": 130423
+        },
+        "unit": "명 (원자료 표기)",
+        "definition": "서울시·KT 생활인구 기반 10m 길단위 생성 지표. 특정 점포 방문객 또는 결제 고객이 아님.",
+        "temporal_aggregation_verified": false,
+        "daily_average": null,
+        "source_id": "OA-15568",
+        "source_csv_row": 1519,
+        "estimated": true
+      },
+      "source_geography_row": 112,
+      "lat": 37.54260426552023,
+      "lng": 127.05336339732489
+    },
+    {
+      "id": "3120104",
+      "name": "연남동(홍대)",
+      "name_ko": "연남동(홍대)",
+      "country": "KR",
+      "municipality": "서울특별시",
+      "district": "마포구",
+      "administrative_neighborhood": "연남동",
+      "administrative_neighborhood_code": "11440710",
+      "geography_type": "발달상권",
+      "geography_type_code": "D",
+      "geography_definition": "서울시 상권분석서비스의 지정 상권 영역. 행정동 전체와 다름.",
+      "area_m2": 437447,
+      "source_xy": {
+        "crs": "EPSG:5181",
+        "x": 193150,
+        "y": 451174
+      },
+      "residents": {
+        "total": 6602,
+        "age_groups": {
+          "연령대10(원자료)": 455,
+          "20-39": 2998,
+          "40-59": 1783,
+          "60+": 1366
+        },
+        "age_groups_native": {
+          "10": 455,
+          "20": 1575,
+          "30": 1423,
+          "40": 971,
+          "50": 812,
+          "60+": 1366
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "서울시 주민등록주소 기반 상주인구 DB",
+        "unit": "명",
+        "source_id": "OA-15584",
+        "source_csv_row": 445,
+        "source_update_rule": "4분기 1회 갱신 후 다음 해 1~3분기 동일값, 원천 기준일 미확인"
+      },
+      "economy": {
+        "workers": 6380,
+        "worker_label": "직장인구(SKT 기반)",
+        "age_groups_native": {
+          "10": 0,
+          "20": 1195,
+          "30": 1687,
+          "40": 1543,
+          "50": 1199,
+          "60+": 756
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "SKT 가입자 기반 직장인구 DB에서 산출. 일본 민영사업체 센서스 종사자와 정의가 다름.",
+        "unit": "명",
+        "source_id": "OA-15569",
+        "source_csv_row": 453,
+        "estimated": true
+      },
+      "flow": {
+        "raw_total": 5025951,
+        "raw_total_label": "총_유동인구_수",
+        "display_label": "상권 생활인구 원자료 지표",
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "age_groups_native": {
+          "10": 476458,
+          "20": 1462245,
+          "30": 1087677,
+          "40": 832558,
+          "50": 578670,
+          "60+": 588343
+        },
+        "age_groups": {
+          "연령대10(원자료)": 476458,
+          "20-39": 2549922,
+          "40-59": 1411228,
+          "60+": 588343
+        },
+        "age20_39_share": 0.5073511460816073,
+        "time_bands": {
+          "00_06": 993957,
+          "06_11": 867810,
+          "11_14": 697465,
+          "14_17": 784872,
+          "17_21": 1072527,
+          "21_24": 609321
+        },
+        "weekday_values": {
+          "월요일": 685987,
+          "화요일": 690340,
+          "수요일": 690285,
+          "목요일": 692564,
+          "금요일": 731871,
+          "토요일": 799041,
+          "일요일": 735866
+        },
+        "unit": "명 (원자료 표기)",
+        "definition": "서울시·KT 생활인구 기반 10m 길단위 생성 지표. 특정 점포 방문객 또는 결제 고객이 아님.",
+        "temporal_aggregation_verified": false,
+        "daily_average": null,
+        "source_id": "OA-15568",
+        "source_csv_row": 458,
+        "estimated": true
+      },
+      "source_geography_row": 1103,
+      "lat": 37.560070235074626,
+      "lng": 126.9224714657634
+    },
+    {
+      "id": "3120197",
+      "name": "역삼역",
+      "name_ko": "역삼역",
+      "country": "KR",
+      "municipality": "서울특별시",
+      "district": "강남구",
+      "administrative_neighborhood": "역삼1동",
+      "administrative_neighborhood_code": "11680640",
+      "geography_type": "발달상권",
+      "geography_type_code": "D",
+      "geography_definition": "서울시 상권분석서비스의 지정 상권 영역. 행정동 전체와 다름.",
+      "area_m2": 562807,
+      "source_xy": {
+        "crs": "EPSG:5181",
+        "x": 203179,
+        "y": 444549
+      },
+      "residents": {
+        "total": 5764,
+        "age_groups": {
+          "연령대10(원자료)": 325,
+          "20-39": 3194,
+          "40-59": 1444,
+          "60+": 801
+        },
+        "age_groups_native": {
+          "10": 325,
+          "20": 1402,
+          "30": 1792,
+          "40": 825,
+          "50": 619,
+          "60+": 801
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "서울시 주민등록주소 기반 상주인구 DB",
+        "unit": "명",
+        "source_id": "OA-15584",
+        "source_csv_row": 354,
+        "source_update_rule": "4분기 1회 갱신 후 다음 해 1~3분기 동일값, 원천 기준일 미확인"
+      },
+      "economy": {
+        "workers": 84399,
+        "worker_label": "직장인구(SKT 기반)",
+        "age_groups_native": {
+          "10": 92,
+          "20": 17389,
+          "30": 25404,
+          "40": 21554,
+          "50": 14783,
+          "60+": 5177
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "SKT 가입자 기반 직장인구 DB에서 산출. 일본 민영사업체 센서스 종사자와 정의가 다름.",
+        "unit": "명",
+        "source_id": "OA-15569",
+        "source_csv_row": 360,
+        "estimated": true
+      },
+      "flow": {
+        "raw_total": 4661032,
+        "raw_total_label": "총_유동인구_수",
+        "display_label": "상권 생활인구 원자료 지표",
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "age_groups_native": {
+          "10": 158999,
+          "20": 956513,
+          "30": 1391234,
+          "40": 1067915,
+          "50": 614469,
+          "60+": 471902
+        },
+        "age_groups": {
+          "연령대10(원자료)": 158999,
+          "20-39": 2347747,
+          "40-59": 1682384,
+          "60+": 471902
+        },
+        "age20_39_share": 0.5036968207899023,
+        "time_bands": {
+          "00_06": 597900,
+          "06_11": 996363,
+          "11_14": 923222,
+          "14_17": 905129,
+          "17_21": 851298,
+          "21_24": 387119
+        },
+        "weekday_values": {
+          "월요일": 742158,
+          "화요일": 785212,
+          "수요일": 782811,
+          "목요일": 816886,
+          "금요일": 735411,
+          "토요일": 424764,
+          "일요일": 373793
+        },
+        "unit": "명 (원자료 표기)",
+        "definition": "서울시·KT 생활인구 기반 10m 길단위 생성 지표. 특정 점포 방문객 또는 결제 고객이 아님.",
+        "temporal_aggregation_verified": false,
+        "daily_average": null,
+        "source_id": "OA-15568",
+        "source_csv_row": 365,
+        "estimated": true
+      },
+      "source_geography_row": 1339,
+      "lat": 37.50039886956355,
+      "lng": 127.03595138126002
+    },
+    {
+      "id": "3120031",
+      "name": "을지로3가역",
+      "name_ko": "을지로3가역",
+      "country": "KR",
+      "municipality": "서울특별시",
+      "district": "중구",
+      "administrative_neighborhood": "을지로동",
+      "administrative_neighborhood_code": "11140605",
+      "geography_type": "발달상권",
+      "geography_type_code": "D",
+      "geography_definition": "서울시 상권분석서비스의 지정 상권 영역. 행정동 전체와 다름.",
+      "area_m2": 254774,
+      "source_xy": {
+        "crs": "EPSG:5181",
+        "x": 199259,
+        "y": 451855
+      },
+      "residents": {
+        "total": 1832,
+        "age_groups": {
+          "연령대10(원자료)": 135,
+          "20-39": 953,
+          "40-59": 530,
+          "60+": 214
+        },
+        "age_groups_native": {
+          "10": 135,
+          "20": 272,
+          "30": 681,
+          "40": 328,
+          "50": 202,
+          "60+": 214
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "서울시 주민등록주소 기반 상주인구 DB",
+        "unit": "명",
+        "source_id": "OA-15584",
+        "source_csv_row": 517,
+        "source_update_rule": "4분기 1회 갱신 후 다음 해 1~3분기 동일값, 원천 기준일 미확인"
+      },
+      "economy": {
+        "workers": 13468,
+        "worker_label": "직장인구(SKT 기반)",
+        "age_groups_native": {
+          "10": 3,
+          "20": 2642,
+          "30": 4033,
+          "40": 3371,
+          "50": 2371,
+          "60+": 1048
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "SKT 가입자 기반 직장인구 DB에서 산출. 일본 민영사업체 센서스 종사자와 정의가 다름.",
+        "unit": "명",
+        "source_id": "OA-15569",
+        "source_csv_row": 525,
+        "estimated": true
+      },
+      "flow": {
+        "raw_total": 2201238,
+        "raw_total_label": "총_유동인구_수",
+        "display_label": "상권 생활인구 원자료 지표",
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "age_groups_native": {
+          "10": 74358,
+          "20": 399774,
+          "30": 505348,
+          "40": 500550,
+          "50": 392101,
+          "60+": 329109
+        },
+        "age_groups": {
+          "연령대10(원자료)": 74358,
+          "20-39": 905122,
+          "40-59": 892651,
+          "60+": 329109
+        },
+        "age20_39_share": 0.4111877043736297,
+        "time_bands": {
+          "00_06": 167152,
+          "06_11": 468596,
+          "11_14": 456908,
+          "14_17": 464555,
+          "17_21": 466111,
+          "21_24": 177915
+        },
+        "weekday_values": {
+          "월요일": 339619,
+          "화요일": 357508,
+          "수요일": 359142,
+          "목요일": 378613,
+          "금요일": 369167,
+          "토요일": 226702,
+          "일요일": 170486
+        },
+        "unit": "명 (원자료 표기)",
+        "definition": "서울시·KT 생활인구 기반 10m 길단위 생성 지표. 특정 점포 방문객 또는 결제 고객이 아님.",
+        "temporal_aggregation_verified": false,
+        "daily_average": null,
+        "source_id": "OA-15568",
+        "source_csv_row": 531,
+        "estimated": true
+      },
+      "source_geography_row": 1248,
+      "lat": 37.56623117746982,
+      "lng": 126.99161264533976
+    },
+    {
+      "id": "3120103",
+      "name": "홍대입구역(홍대)",
+      "name_ko": "홍대입구역(홍대)",
+      "country": "KR",
+      "municipality": "서울특별시",
+      "district": "마포구",
+      "administrative_neighborhood": "서교동",
+      "administrative_neighborhood_code": "11440660",
+      "geography_type": "발달상권",
+      "geography_type_code": "D",
+      "geography_definition": "서울시 상권분석서비스의 지정 상권 영역. 행정동 전체와 다름.",
+      "area_m2": 461923,
+      "source_xy": {
+        "crs": "EPSG:5181",
+        "x": 192825,
+        "y": 450117
+      },
+      "residents": {
+        "total": 4546,
+        "age_groups": {
+          "연령대10(원자료)": 222,
+          "20-39": 2738,
+          "40-59": 902,
+          "60+": 684
+        },
+        "age_groups_native": {
+          "10": 222,
+          "20": 1514,
+          "30": 1224,
+          "40": 500,
+          "50": 402,
+          "60+": 684
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "서울시 주민등록주소 기반 상주인구 DB",
+        "unit": "명",
+        "source_id": "OA-15584",
+        "source_csv_row": 446,
+        "source_update_rule": "4분기 1회 갱신 후 다음 해 1~3분기 동일값, 원천 기준일 미확인"
+      },
+      "economy": {
+        "workers": 7185,
+        "worker_label": "직장인구(SKT 기반)",
+        "age_groups_native": {
+          "10": 0,
+          "20": 1486,
+          "30": 2032,
+          "40": 1681,
+          "50": 1187,
+          "60+": 799
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "SKT 가입자 기반 직장인구 DB에서 산출. 일본 민영사업체 센서스 종사자와 정의가 다름.",
+        "unit": "명",
+        "source_id": "OA-15569",
+        "source_csv_row": 454,
+        "estimated": true
+      },
+      "flow": {
+        "raw_total": 4134072,
+        "raw_total_label": "총_유동인구_수",
+        "display_label": "상권 생활인구 원자료 지표",
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "age_groups_native": {
+          "10": 555181,
+          "20": 1755893,
+          "30": 821004,
+          "40": 467008,
+          "50": 288779,
+          "60+": 246209
+        },
+        "age_groups": {
+          "연령대10(원자료)": 555181,
+          "20-39": 2576897,
+          "40-59": 755787,
+          "60+": 246209
+        },
+        "age20_39_share": 0.6233314272223609,
+        "time_bands": {
+          "00_06": 794506,
+          "06_11": 552548,
+          "11_14": 552699,
+          "14_17": 684075,
+          "17_21": 981823,
+          "21_24": 568420
+        },
+        "weekday_values": {
+          "월요일": 528792,
+          "화요일": 525816,
+          "수요일": 528699,
+          "목요일": 544782,
+          "금요일": 620481,
+          "토요일": 742285,
+          "일요일": 643219
+        },
+        "unit": "명 (원자료 표기)",
+        "definition": "서울시·KT 생활인구 기반 10m 길단위 생성 지표. 특정 점포 방문객 또는 결제 고객이 아님.",
+        "temporal_aggregation_verified": false,
+        "daily_average": null,
+        "source_id": "OA-15568",
+        "source_csv_row": 459,
+        "estimated": true
+      },
+      "source_geography_row": 1102,
+      "lat": 37.55054422664607,
+      "lng": 126.91880344160859
+    },
+    {
+      "id": "3120101",
+      "name": "합정역",
+      "name_ko": "합정역",
+      "country": "KR",
+      "municipality": "서울특별시",
+      "district": "마포구",
+      "administrative_neighborhood": "서교동",
+      "administrative_neighborhood_code": "11440660",
+      "geography_type": "발달상권",
+      "geography_type_code": "D",
+      "geography_definition": "서울시 상권분석서비스의 지정 상권 영역. 행정동 전체와 다름.",
+      "area_m2": 251511,
+      "source_xy": {
+        "crs": "EPSG:5181",
+        "x": 192355,
+        "y": 449998
+      },
+      "residents": {
+        "total": 5348,
+        "age_groups": {
+          "연령대10(원자료)": 556,
+          "20-39": 1963,
+          "40-59": 1641,
+          "60+": 1188
+        },
+        "age_groups_native": {
+          "10": 556,
+          "20": 939,
+          "30": 1024,
+          "40": 736,
+          "50": 905,
+          "60+": 1188
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "서울시 주민등록주소 기반 상주인구 DB",
+        "unit": "명",
+        "source_id": "OA-15584",
+        "source_csv_row": 448,
+        "source_update_rule": "4분기 1회 갱신 후 다음 해 1~3분기 동일값, 원천 기준일 미확인"
+      },
+      "economy": {
+        "workers": 4035,
+        "worker_label": "직장인구(SKT 기반)",
+        "age_groups_native": {
+          "10": 0,
+          "20": 760,
+          "30": 1160,
+          "40": 1006,
+          "50": 695,
+          "60+": 414
+        },
+        "observed_date": null,
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "display_date": "2026년 2분기 수록",
+        "definition": "SKT 가입자 기반 직장인구 DB에서 산출. 일본 민영사업체 센서스 종사자와 정의가 다름.",
+        "unit": "명",
+        "source_id": "OA-15569",
+        "source_csv_row": 456,
+        "estimated": true
+      },
+      "flow": {
+        "raw_total": 1468037,
+        "raw_total_label": "총_유동인구_수",
+        "display_label": "상권 생활인구 원자료 지표",
+        "reporting_quarter": "20262",
+        "observed_period": "2026-Q2",
+        "period_start": "2026-04-01",
+        "period_end": "2026-06-30",
+        "age_groups_native": {
+          "10": 121431,
+          "20": 371748,
+          "30": 380353,
+          "40": 256993,
+          "50": 168976,
+          "60+": 168536
+        },
+        "age_groups": {
+          "연령대10(원자료)": 121431,
+          "20-39": 752101,
+          "40-59": 425969,
+          "60+": 168536
+        },
+        "age20_39_share": 0.5123174688376383,
+        "time_bands": {
+          "00_06": 196455,
+          "06_11": 261024,
+          "11_14": 248160,
+          "14_17": 253084,
+          "17_21": 340521,
+          "21_24": 168793
+        },
+        "weekday_values": {
+          "월요일": 203045,
+          "화요일": 206874,
+          "수요일": 207308,
+          "목요일": 214218,
+          "금요일": 222748,
+          "토요일": 216191,
+          "일요일": 197652
+        },
+        "unit": "명 (원자료 표기)",
+        "definition": "서울시·KT 생활인구 기반 10m 길단위 생성 지표. 특정 점포 방문객 또는 결제 고객이 아님.",
+        "temporal_aggregation_verified": false,
+        "daily_average": null,
+        "source_id": "OA-15568",
+        "source_csv_row": 461,
+        "estimated": true
+      },
+      "source_geography_row": 1096,
+      "lat": 37.5494682624048,
+      "lng": 126.91348588732001
+    }
+  ],
+  "warnings": [
+    "2026-Q2 is the reporting quarter, not proof of current real-time or same-quarter source observations for residents/workers.",
+    "Resident and worker datasets explicitly state annual Q4 updates with the next Q1-Q3 carrying identical values. Exact underlying source dates are not supplied in the row.",
+    "The native age category 10 has not been verified to mean 0-19; preserve its native label instead of relabeling it 0-19. All native age groups sum to resident and worker totals.",
+    "Flow raw totals are exact published values. Temporal denominator requires further verification. Do not call them current people, unique people, or daily averages and do not divide by 91 without verified methodology.",
+    "Some flow age, sex, weekday and time totals differ by a few units from the overall total; raw supplied rounding differences are retained.",
+    "Korean SKT-derived workplace population is not definitionally identical to Japan economic-census private workers.",
+    "Seoul commercial area polygons differ from Japanese chome and Korean administrative neighborhoods; do not compare unadjusted totals as if equal geographic areas.",
+    "Coordinates are EPSG:5181 projected X/Y; convert to WGS84 before mapping.",
+    "All values are static snapshots taken from official files; automatic refresh has not been implemented in this extraction."
+  ],
+  "coordinate_conversion": {
+    "source_crs": "EPSG:5181",
+    "target_crs": "EPSG:4326",
+    "library": "pyproj",
+    "library_version": "3.8.0",
+    "always_xy": true,
+    "input_order": [
+      "x",
+      "y"
+    ],
+    "output_order": [
+      "lng",
+      "lat"
+    ],
+    "method": "Transformer.from_crs(\"EPSG:5181\", \"EPSG:4326\", always_xy=True)",
+    "description": "Inverse of Korea Central Belt + KGD2002 to WGS 84 (1) (with axis order normalized for visualization)",
+    "validation": "All six transformed points fall within latitude 37.4–37.8 and longitude 126.7–127.3.",
+    "note": "Transformed official source point coordinates; not newly calculated polygon centroids."
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-10-24",
+  "sources": [
+    {
+      "id": "shinjuku_resident_population_202610",
+      "title": "新宿区 住民基本台帳の町丁別年齢（5歳階級）別人口（日本人と外国人の合計）",
+      "url": "https://www.city.shinjuku.lg.jp/kusei/file02_00026.html",
+      "download_url": "https://www.city.shinjuku.lg.jp/content/000467645.xlsx",
+      "observed_date": "2026-10-01",
+      "local_file": "population-inputs/shinjuku-age-202610.xlsx",
+      "sheet": "町丁５歳",
+      "columns": {
+        "A": "町丁名",
+        "B": "合計",
+        "C:W": "0-4 through 95-99 and 100+",
+        "X": "65歳以上再掲"
+      }
+    },
+    {
+      "id": "tokyo_economic_census_2021_table30",
+      "title": "「令和３年経済センサス‐活動調査報告（産業横断的集計　東京都概況）」 第30表　区市町村、町丁目、産業中分類別民営事業所数及び男女別従業者数",
+      "url": "https://spec.api.metro.tokyo.lg.jp/spec/t000003d2000000954-ab187a0bd49660eedf07684872908142-0",
+      "original_table_url": "https://www.toukei.metro.tokyo.lg.jp/ecensus/kzsensuska/2021/ka21t10001-30.htm",
+      "api_url": "https://service.api.metro.tokyo.lg.jp/api/t000003d2000000954-ab187a0bd49660eedf07684872908142-0/json",
+      "api_method": "POST",
+      "api_query": {
+        "limit": 1000
+      },
+      "api_filter": {
+        "searchCondition": {
+          "stringAndSearch": [
+            {
+              "column": "区市町村",
+              "relationship": "eq",
+              "condition": "新宿区"
+            }
+          ]
+        }
+      },
+      "observed_date": "2021-06-01",
+      "api_metadata_updated": "2024/03/19 14:00:00",
+      "license": "CC BY (official API catalogue)",
+      "local_raw_response": "population-inputs/economy-api-shinjuku.json",
+      "source_table_notes": "第30表 区市町村、町丁目、産業中分類別民営事業所数及び男女別従業者数",
+      "raw_response_rows_received": 700
+    }
+  ],
+  "areas": [
+    {
+      "name_ja": "歌舞伎町２丁目",
+      "normalized_name_ja": "歌舞伎町2丁目",
+      "geography_type": "町丁目",
+      "municipality": "東京都新宿区",
+      "residents": {
+        "observed_date": "2026-10-01",
+        "population_definition": "住民基本台帳登録人口・日本人と外国人の合計",
+        "unit": "人",
+        "total": 1899,
+        "age_5yr": {
+          "0-4": 13,
+          "5-9": 19,
+          "10-14": 19,
+          "15-19": 27,
+          "20-24": 179,
+          "25-29": 279,
+          "30-34": 193,
+          "35-39": 196,
+          "40-44": 153,
+          "45-49": 163,
+          "50-54": 144,
+          "55-59": 145,
+          "60-64": 98,
+          "65-69": 76,
+          "70-74": 52,
+          "75-79": 65,
+          "80-84": 34,
+          "85-89": 28,
+          "90-94": 12,
+          "95-99": 3,
+          "100+": 1
+        },
+        "age_groups": {
+          "0-19": 78,
+          "20-39": 847,
+          "40-59": 605,
+          "60+": 369
+        },
+        "age_65_plus": 271,
+        "source_id": "shinjuku_resident_population_202610",
+        "source_sheet": "町丁５歳",
+        "source_row": 37,
+        "source_range": "A37:X37",
+        "estimated": false
+      },
+      "economy": {
+        "status": "verified",
+        "observed_date": "2021-06-01",
+        "population_definition": "経済センサス-活動調査、民営事業所およびその従業者。全産業。",
+        "source_id": "tokyo_economic_census_2021_table30",
+        "source_geography_label": "新宿区歌舞伎町2丁目",
+        "source_geography_code": "1310401802",
+        "all_private_establishments": 579,
+        "all_private_workers": 9711,
+        "restaurant_establishments_jsic76": 240,
+        "restaurant_workers_jsic76": 1875,
+        "takeaway_delivery_establishments_jsic77": 3,
+        "takeaway_delivery_workers_jsic77": 59,
+        "establishment_unit": "事業所",
+        "worker_unit": "人",
+        "food_industry_definitions": {
+          "76": "飲食店",
+          "77": "持ち帰り・配達飲食サービス業"
+        },
+        "source_rows": {
+          "establishments": 1797,
+          "workers": 1798
+        },
+        "estimated": false
+      }
+    },
+    {
+      "name_ja": "百人町１丁目",
+      "normalized_name_ja": "百人町1丁目",
+      "geography_type": "町丁目",
+      "municipality": "東京都新宿区",
+      "residents": {
+        "observed_date": "2026-10-01",
+        "population_definition": "住民基本台帳登録人口・日本人と外国人の合計",
+        "unit": "人",
+        "total": 3531,
+        "age_5yr": {
+          "0-4": 35,
+          "5-9": 35,
+          "10-14": 30,
+          "15-19": 127,
+          "20-24": 505,
+          "25-29": 595,
+          "30-34": 403,
+          "35-39": 298,
+          "40-44": 190,
+          "45-49": 185,
+          "50-54": 208,
+          "55-59": 188,
+          "60-64": 163,
+          "65-69": 146,
+          "70-74": 114,
+          "75-79": 131,
+          "80-84": 77,
+          "85-89": 69,
+          "90-94": 23,
+          "95-99": 9,
+          "100+": 0
+        },
+        "age_groups": {
+          "0-19": 227,
+          "20-39": 1801,
+          "40-59": 771,
+          "60+": 732
+        },
+        "age_65_plus": 569,
+        "source_id": "shinjuku_resident_population_202610",
+        "source_sheet": "町丁５歳",
+        "source_row": 132,
+        "source_range": "A132:X132",
+        "estimated": false
+      },
+      "economy": {
+        "status": "verified",
+        "observed_date": "2021-06-01",
+        "population_definition": "経済センサス-活動調査、民営事業所およびその従業者。全産業。",
+        "source_id": "tokyo_economic_census_2021_table30",
+        "source_geography_label": "新宿区百人町1丁目",
+        "source_geography_code": "1310408301",
+        "all_private_establishments": 555,
+        "all_private_workers": 5023,
+        "restaurant_establishments_jsic76": 123,
+        "restaurant_workers_jsic76": 887,
+        "takeaway_delivery_establishments_jsic77": 1,
+        "takeaway_delivery_workers_jsic77": 10,
+        "establishment_unit": "事業所",
+        "worker_unit": "人",
+        "food_industry_definitions": {
+          "76": "飲食店",
+          "77": "持ち帰り・配達飲食サービス業"
+        },
+        "source_rows": {
+          "establishments": 2141,
+          "workers": 2142
+        },
+        "estimated": false
+      }
+    },
+    {
+      "name_ja": "大久保１丁目",
+      "normalized_name_ja": "大久保1丁目",
+      "geography_type": "町丁目",
+      "municipality": "東京都新宿区",
+      "residents": {
+        "observed_date": "2026-10-01",
+        "population_definition": "住民基本台帳登録人口・日本人と外国人の合計",
+        "unit": "人",
+        "total": 3711,
+        "age_5yr": {
+          "0-4": 56,
+          "5-9": 30,
+          "10-14": 50,
+          "15-19": 130,
+          "20-24": 417,
+          "25-29": 560,
+          "30-34": 462,
+          "35-39": 289,
+          "40-44": 239,
+          "45-49": 229,
+          "50-54": 225,
+          "55-59": 215,
+          "60-64": 158,
+          "65-69": 159,
+          "70-74": 130,
+          "75-79": 163,
+          "80-84": 95,
+          "85-89": 58,
+          "90-94": 34,
+          "95-99": 11,
+          "100+": 1
+        },
+        "age_groups": {
+          "0-19": 266,
+          "20-39": 1728,
+          "40-59": 908,
+          "60+": 809
+        },
+        "age_65_plus": 651,
+        "source_id": "shinjuku_resident_population_202610",
+        "source_sheet": "町丁５歳",
+        "source_row": 137,
+        "source_range": "A137:X137",
+        "estimated": false
+      },
+      "economy": {
+        "status": "verified",
+        "observed_date": "2021-06-01",
+        "population_definition": "経済センサス-活動調査、民営事業所およびその従業者。全産業。",
+        "source_id": "tokyo_economic_census_2021_table30",
+        "source_geography_label": "新宿区大久保1丁目",
+        "source_geography_code": "1310408401",
+        "all_private_establishments": 357,
+        "all_private_workers": 5111,
+        "restaurant_establishments_jsic76": 72,
+        "restaurant_workers_jsic76": 798,
+        "takeaway_delivery_establishments_jsic77": 3,
+        "takeaway_delivery_workers_jsic77": 321,
+        "establishment_unit": "事業所",
+        "worker_unit": "人",
+        "food_industry_definitions": {
+          "76": "飲食店",
+          "77": "持ち帰り・配達飲食サービス業"
+        },
+        "source_rows": {
+          "establishments": 2161,
+          "workers": 2162
+        },
+        "estimated": false
+      }
+    },
+    {
+      "name_ja": "高田馬場１丁目",
+      "normalized_name_ja": "高田馬場1丁目",
+      "geography_type": "町丁目",
+      "municipality": "東京都新宿区",
+      "residents": {
+        "observed_date": "2026-10-01",
+        "population_definition": "住民基本台帳登録人口・日本人と外国人の合計",
+        "unit": "人",
+        "total": 4615,
+        "age_5yr": {
+          "0-4": 93,
+          "5-9": 107,
+          "10-14": 125,
+          "15-19": 222,
+          "20-24": 456,
+          "25-29": 508,
+          "30-34": 412,
+          "35-39": 318,
+          "40-44": 327,
+          "45-49": 293,
+          "50-54": 386,
+          "55-59": 306,
+          "60-64": 235,
+          "65-69": 196,
+          "70-74": 153,
+          "75-79": 168,
+          "80-84": 131,
+          "85-89": 98,
+          "90-94": 57,
+          "95-99": 16,
+          "100+": 8
+        },
+        "age_groups": {
+          "0-19": 547,
+          "20-39": 1694,
+          "40-59": 1312,
+          "60+": 1062
+        },
+        "age_65_plus": 827,
+        "source_id": "shinjuku_resident_population_202610",
+        "source_sheet": "町丁５歳",
+        "source_row": 145,
+        "source_range": "A145:X145",
+        "estimated": false
+      },
+      "economy": {
+        "status": "verified",
+        "observed_date": "2021-06-01",
+        "population_definition": "経済センサス-活動調査、民営事業所およびその従業者。全産業。",
+        "source_id": "tokyo_economic_census_2021_table30",
+        "source_geography_label": "新宿区高田馬場1丁目",
+        "source_geography_code": "1310408701",
+        "all_private_establishments": 1011,
+        "all_private_workers": 12998,
+        "restaurant_establishments_jsic76": 94,
+        "restaurant_workers_jsic76": 1219,
+        "takeaway_delivery_establishments_jsic77": 3,
+        "takeaway_delivery_workers_jsic77": 42,
+        "establishment_unit": "事業所",
+        "worker_unit": "人",
+        "food_industry_definitions": {
+          "76": "飲食店",
+          "77": "持ち帰り・配達飲食サービス業"
+        },
+        "source_rows": {
+          "establishments": 2201,
+          "workers": 2202
+        },
+        "estimated": false
+      }
+    },
+    {
+      "name_ja": "西新宿１丁目",
+      "normalized_name_ja": "西新宿1丁目",
+      "geography_type": "町丁目",
+      "municipality": "東京都新宿区",
+      "residents": {
+        "observed_date": "2026-10-01",
+        "population_definition": "住民基本台帳登録人口・日本人と外国人の合計",
+        "unit": "人",
+        "total": 39,
+        "age_5yr": {
+          "0-4": 0,
+          "5-9": 0,
+          "10-14": 0,
+          "15-19": 1,
+          "20-24": 1,
+          "25-29": 1,
+          "30-34": 1,
+          "35-39": 0,
+          "40-44": 1,
+          "45-49": 4,
+          "50-54": 5,
+          "55-59": 3,
+          "60-64": 0,
+          "65-69": 1,
+          "70-74": 6,
+          "75-79": 5,
+          "80-84": 3,
+          "85-89": 5,
+          "90-94": 2,
+          "95-99": 0,
+          "100+": 0
+        },
+        "age_groups": {
+          "0-19": 1,
+          "20-39": 3,
+          "40-59": 13,
+          "60+": 22
+        },
+        "age_65_plus": 22,
+        "source_id": "shinjuku_resident_population_202610",
+        "source_sheet": "町丁５歳",
+        "source_row": 175,
+        "source_range": "A175:X175",
+        "estimated": false
+      },
+      "economy": {
+        "status": "verified",
+        "observed_date": "2021-06-01",
+        "population_definition": "経済センサス-活動調査、民営事業所およびその従業者。全産業。",
+        "source_id": "tokyo_economic_census_2021_table30",
+        "source_geography_label": "新宿区西新宿1丁目",
+        "source_geography_code": "1310409401",
+        "all_private_establishments": 1980,
+        "all_private_workers": 76765,
+        "restaurant_establishments_jsic76": 432,
+        "restaurant_workers_jsic76": 6560,
+        "takeaway_delivery_establishments_jsic77": 5,
+        "takeaway_delivery_workers_jsic77": 62,
+        "establishment_unit": "事業所",
+        "worker_unit": "人",
+        "food_industry_definitions": {
+          "76": "飲食店",
+          "77": "持ち帰り・配達飲食サービス業"
+        },
+        "source_rows": {
+          "establishments": 2329,
+          "workers": 2330
+        },
+        "estimated": false
+      }
+    },
+    {
+      "name_ja": "西新宿４丁目",
+      "normalized_name_ja": "西新宿4丁目",
+      "geography_type": "町丁目",
+      "municipality": "東京都新宿区",
+      "residents": {
+        "observed_date": "2026-10-01",
+        "population_definition": "住民基本台帳登録人口・日本人と外国人の合計",
+        "unit": "人",
+        "total": 7346,
+        "age_5yr": {
+          "0-4": 139,
+          "5-9": 143,
+          "10-14": 162,
+          "15-19": 217,
+          "20-24": 444,
+          "25-29": 800,
+          "30-34": 754,
+          "35-39": 677,
+          "40-44": 584,
+          "45-49": 589,
+          "50-54": 596,
+          "55-59": 534,
+          "60-64": 434,
+          "65-69": 283,
+          "70-74": 261,
+          "75-79": 287,
+          "80-84": 189,
+          "85-89": 147,
+          "90-94": 78,
+          "95-99": 26,
+          "100+": 2
+        },
+        "age_groups": {
+          "0-19": 661,
+          "20-39": 2675,
+          "40-59": 2303,
+          "60+": 1707
+        },
+        "age_65_plus": 1273,
+        "source_id": "shinjuku_resident_population_202610",
+        "source_sheet": "町丁５歳",
+        "source_row": 179,
+        "source_range": "A179:X179",
+        "estimated": false
+      },
+      "economy": {
+        "status": "verified",
+        "observed_date": "2021-06-01",
+        "population_definition": "経済センサス-活動調査、民営事業所およびその従業者。全産業。",
+        "source_id": "tokyo_economic_census_2021_table30",
+        "source_geography_label": "新宿区西新宿4丁目",
+        "source_geography_code": "1310409404",
+        "all_private_establishments": 448,
+        "all_private_workers": 6400,
+        "restaurant_establishments_jsic76": 37,
+        "restaurant_workers_jsic76": 354,
+        "takeaway_delivery_establishments_jsic77": 3,
+        "takeaway_delivery_workers_jsic77": 46,
+        "establishment_unit": "事業所",
+        "worker_unit": "人",
+        "food_industry_definitions": {
+          "76": "飲食店",
+          "77": "持ち帰り・配達飲食サービス業"
+        },
+        "source_rows": {
+          "establishments": 2341,
+          "workers": 2342
+        },
+        "estimated": false
+      }
+    }
+  ],
+  "warnings": [
+    "Residents are registered residents, not visitors, foot traffic, daytime population, or restaurant customers.",
+    "Age groups 0-19/20-39/40-59/60+ are exact sums of published 5-year age cells.",
+    "Economic census observations are as of 2021-06-01, not current live store counts or current daily office attendance.",
+    "Economic establishment/worker counts cover all private industries, not only offices. Government/public establishments are not represented by this table.",
+    "Restaurant counts are JSIC division 76. Takeaway/delivery (division 77) is reported separately. Neither is a list of presently operating competitors.",
+    "Do not divide 2021 workers by 2026 residents and label the result a contemporaneous daytime/nighttime population ratio.",
+    "Monthly residents and economic census rows matched by normalized Japanese neighborhood label; no boundary area weighting or footfall estimation was performed.",
+    "Blank, suppressed, missing, and unknown source cells must not be displayed as zero; selected numeric fields in these six areas have no such cells."
+  ]
+}
