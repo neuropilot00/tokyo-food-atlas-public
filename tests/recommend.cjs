@@ -2,9 +2,16 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
-const { recommend } = require('../dist/recommend.js');
-const Domain = require('../dist/domain.js');
-const db = require('../dist/data.json');
+// Load deployed UMD sources through VM even when package.json uses type=module.
+function loadUMD(name) {
+  const file = require.resolve('../public/' + name + '.js');
+  const umd = { exports: {} };
+  vm.runInThisContext('(function(module, window) {\n' + fs.readFileSync(file, 'utf8') + '\n})', { filename: file })(umd, {});
+  return umd.exports;
+}
+const { recommend } = loadUMD('recommend');
+const Domain = loadUMD('domain');
+const db = JSON.parse(fs.readFileSync(require.resolve('../public/data.json'), 'utf8'));
 const area = db.countries.KR.areas[0];
 const profile = { totalBudget: 150000000, daypart: 'allday', experience: 'new', service: 'any' };
 const original = JSON.stringify({ area, profile });
@@ -93,7 +100,7 @@ for (const invalid of [
   { country: 'KR', area, profile: { ...profile, service: 'constructor' } }
 ]) { const r = recommend(invalid); assert.equal(r.valid, false); assert.equal(r.candidates.length, 0); }
 const context = { window: {} };
-vm.runInNewContext(fs.readFileSync(require.resolve('../dist/recommend.js'),'utf8'), context);
+vm.runInNewContext(fs.readFileSync(require.resolve('../public/recommend.js'),'utf8'), context);
 assert.equal(typeof context.window.AtlasRecommend.recommend, 'function');
 assert.equal(context.window.AtlasRecommend.recommend({country:'KR',area,profile}).candidates[0].id, result.candidates[0].id);
 console.log('PASS: budget exclusion, experience and preference ranking, time/space/rent constraints, missing data, no age inference or raw-count penalty, accounting identities, input purity and browser/Node exports.');

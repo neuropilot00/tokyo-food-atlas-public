@@ -1,0 +1,2263 @@
+{
+  "version": "seoul-citydata-places-2026-04-02",
+  "generatedAt": "2026-10-24T10:45:50.468748+00:00",
+  "count": 121,
+  "defaultArea": "POI009",
+  "sampleOnlyArea": "POI009",
+  "source": {
+    "title": "서울특별시 실시간 도시데이터 공식 121장소 목록·영역",
+    "url": "https://data.seoul.go.kr/dataList/OA-21285/A/1/datasetView.do",
+    "updatedAt": "2026-04-02",
+    "provider": "서울특별시 열린데이터광장",
+    "license": "공공누리 제1유형: 출처표시",
+    "files": [
+      {
+        "title": "서울시 주요 121장소 목록.xlsx",
+        "updatedAt": "2026-04-02",
+        "download": {
+          "method": "POST",
+          "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?&useCache=false",
+          "form": {
+            "infId": "OA-21285",
+            "seqNo": "",
+            "seq": "23",
+            "infSeq": "2"
+          }
+        },
+        "receivedAt": "2026-10-24T10:43:46.895166+00:00",
+        "bytes": 18884,
+        "sha256": "60aedf332efef1535623e22c14af2acd6b3ccfa35e60423fbbea8cc8188f1ff7"
+      },
+      {
+        "title": "서울시 주요 121장소 영역.zip",
+        "updatedAt": "2026-04-02",
+        "download": {
+          "method": "POST",
+          "url": "https://datafile.seoul.go.kr/bigfile/iot/inf/nio_download.do?&useCache=false",
+          "form": {
+            "infId": "OA-21285",
+            "seqNo": "",
+            "seq": "24",
+            "infSeq": "2"
+          }
+        },
+        "receivedAt": "2026-10-24T10:43:47.641576+00:00",
+        "bytes": 134502,
+        "sha256": "fda69cd2ee3812103931cfd0ef1a0146336f06a23b6e1c2e4f9e0653620262ac"
+      }
+    ]
+  },
+  "coordinateMetadata": {
+    "crs": "EPSG:4326",
+    "basis": "공식 WGS84 영역의 바운딩박스 중심을 계산한 참고점",
+    "note": "공식 문서가 발표한 중심점·현장 관측 위치·건물 입구 좌표가 아닙니다. 복잡한 영역에서는 참고점이 영역 내부에 있지 않을 수 있습니다."
+  },
+  "notes": [
+    "장소 목록·영역의 2026-04-02 스냅샷입니다. 실시간 인구 수치를 포함하지 않습니다.",
+    "공식 장소 코드는 연속 번호가 아닙니다. 실제 파일에 수록된 121개 코드만 사용했습니다.",
+    "운영 인증키 없이 sample로 조회할 수 있는 곳은 광화문·덕수궁(POI009) 한 곳입니다.",
+    "운영키 저장과 장소 선택만으로 API 연결 성공을 보장하지 않습니다. 실제 응답 상태와 원천 업데이트 시각을 확인해야 합니다."
+  ],
+  "categories": [
+    {
+      "name": "관광특구",
+      "count": 7
+    },
+    {
+      "name": "고궁·문화유산",
+      "count": 5
+    },
+    {
+      "name": "인구밀집지역",
+      "count": 48
+    },
+    {
+      "name": "발달상권",
+      "count": 28
+    },
+    {
+      "name": "공원",
+      "count": 33
+    }
+  ],
+  "areas": [
+    {
+      "code": "POI001",
+      "name": "강남 MICE 관광특구",
+      "nameEn": "Gangnam MICE Special Tourist Zone",
+      "category": "관광특구",
+      "order": 1,
+      "sourceRow": 2,
+      "lat": 37.510897,
+      "lng": 127.059949,
+      "bbox": [
+        127.057005,
+        37.507891,
+        127.062893,
+        37.513903
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI002",
+      "name": "동대문 관광특구",
+      "nameEn": "Dongdaemun Fashion Town Special Tourist Zone",
+      "category": "관광특구",
+      "order": 2,
+      "sourceRow": 3,
+      "lat": 37.567165,
+      "lng": 127.011141,
+      "bbox": [
+        127.004277,
+        37.564573,
+        127.018004,
+        37.569757
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI003",
+      "name": "명동 관광특구",
+      "nameEn": "Myeong-dong Namdaemun Bukchang-dong Da-dong Mugyo-dong Special Tourist Zone",
+      "category": "관광특구",
+      "order": 3,
+      "sourceRow": 4,
+      "lat": 37.563487,
+      "lng": 126.982212,
+      "bbox": [
+        126.975627,
+        37.557681,
+        126.988797,
+        37.569293
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI004",
+      "name": "이태원 관광특구",
+      "nameEn": "Itaewon Special Tourist Zone",
+      "category": "관광특구",
+      "order": 4,
+      "sourceRow": 5,
+      "lat": 37.534587,
+      "lng": 126.995386,
+      "bbox": [
+        126.98806,
+        37.530237,
+        127.002713,
+        37.538937
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI005",
+      "name": "잠실 관광특구",
+      "nameEn": "Jamsil Special Tourist Zone",
+      "category": "관광특구",
+      "order": 5,
+      "sourceRow": 6,
+      "lat": 37.515875,
+      "lng": 127.111837,
+      "bbox": [
+        127.092721,
+        37.505837,
+        127.130953,
+        37.525913
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI006",
+      "name": "종로·청계 관광특구",
+      "nameEn": "Jongno Cheonggye Special Toruist Zone",
+      "category": "관광특구",
+      "order": 6,
+      "sourceRow": 7,
+      "lat": 37.570586,
+      "lng": 126.996586,
+      "bbox": [
+        126.977512,
+        37.568127,
+        127.01566,
+        37.573045
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI007",
+      "name": "홍대 관광특구",
+      "nameEn": "HongDae Culture & Arts Special Tourist Zone",
+      "category": "관광특구",
+      "order": 7,
+      "sourceRow": 8,
+      "lat": 37.554828,
+      "lng": 126.92166,
+      "bbox": [
+        126.911679,
+        37.547864,
+        126.931641,
+        37.561793
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI008",
+      "name": "경복궁",
+      "nameEn": "Gyeongbokgung Palace",
+      "category": "고궁·문화유산",
+      "order": 8,
+      "sourceRow": 9,
+      "lat": 37.57972,
+      "lng": 126.976864,
+      "bbox": [
+        126.9736,
+        37.575702,
+        126.980127,
+        37.583738
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI009",
+      "name": "광화문·덕수궁",
+      "nameEn": "Gwanghwamun & Deoksugung Palace",
+      "category": "고궁·문화유산",
+      "order": 9,
+      "sourceRow": 10,
+      "lat": 37.570112,
+      "lng": 126.978163,
+      "bbox": [
+        126.97325070821054,
+        37.5627171235387,
+        126.98307436479111,
+        37.57750771737459
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": true
+    },
+    {
+      "code": "POI010",
+      "name": "보신각",
+      "nameEn": "Bosingak",
+      "category": "고궁·문화유산",
+      "order": 10,
+      "sourceRow": 11,
+      "lat": 37.570577,
+      "lng": 126.983206,
+      "bbox": [
+        126.98053,
+        37.568475,
+        126.985883,
+        37.572679
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI011",
+      "name": "서울 암사동 유적",
+      "nameEn": "Amsa Prehistoric Settlement Site",
+      "category": "고궁·문화유산",
+      "order": 11,
+      "sourceRow": 12,
+      "lat": 37.560913,
+      "lng": 127.130433,
+      "bbox": [
+        127.127988,
+        37.557991,
+        127.132878,
+        37.563836
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI012",
+      "name": "창덕궁·종묘",
+      "nameEn": "Changdeokgung Palace & Jongmyo Shrine",
+      "category": "고궁·문화유산",
+      "order": 12,
+      "sourceRow": 13,
+      "lat": 37.579043,
+      "lng": 126.993995,
+      "bbox": [
+        126.987674,
+        37.570451,
+        127.000317,
+        37.587636
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI013",
+      "name": "가산디지털단지역",
+      "nameEn": "Gasan Digital Complex station",
+      "category": "인구밀집지역",
+      "order": 13,
+      "sourceRow": 14,
+      "lat": 37.480804,
+      "lng": 126.880824,
+      "bbox": [
+        126.871763,
+        37.474937,
+        126.889885,
+        37.486672
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI014",
+      "name": "강남역",
+      "nameEn": "Gangnam station",
+      "category": "인구밀집지역",
+      "order": 14,
+      "sourceRow": 15,
+      "lat": 37.498774,
+      "lng": 127.028109,
+      "bbox": [
+        127.022828,
+        37.492532,
+        127.033389,
+        37.505017
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI015",
+      "name": "건대입구역",
+      "nameEn": "Konkuk University station",
+      "category": "인구밀집지역",
+      "order": 15,
+      "sourceRow": 16,
+      "lat": 37.540499,
+      "lng": 127.068661,
+      "bbox": [
+        127.062844,
+        37.536878,
+        127.074479,
+        37.544121
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI016",
+      "name": "고덕역",
+      "nameEn": "Godeok station",
+      "category": "인구밀집지역",
+      "order": 16,
+      "sourceRow": 17,
+      "lat": 37.553544,
+      "lng": 127.154691,
+      "bbox": [
+        127.152809,
+        37.551704,
+        127.156572,
+        37.555383
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI017",
+      "name": "고속터미널역",
+      "nameEn": "Express Bus Terminal station",
+      "category": "인구밀집지역",
+      "order": 17,
+      "sourceRow": 18,
+      "lat": 37.5048,
+      "lng": 127.005745,
+      "bbox": [
+        127.001074,
+        37.502213,
+        127.010416,
+        37.507387
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI018",
+      "name": "교대역",
+      "nameEn": "Seoul National University of Education station",
+      "category": "인구밀집지역",
+      "order": 18,
+      "sourceRow": 19,
+      "lat": 37.491551,
+      "lng": 127.014371,
+      "bbox": [
+        127.010827,
+        37.487856,
+        127.017914,
+        37.495247
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI019",
+      "name": "구로디지털단지역",
+      "nameEn": "Guro Digital Complex station",
+      "category": "인구밀집지역",
+      "order": 19,
+      "sourceRow": 20,
+      "lat": 37.484195,
+      "lng": 126.896829,
+      "bbox": [
+        126.890743,
+        37.480512,
+        126.902915,
+        37.487878
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI020",
+      "name": "구로역",
+      "nameEn": "Guro station",
+      "category": "인구밀집지역",
+      "order": 20,
+      "sourceRow": 21,
+      "lat": 37.502363,
+      "lng": 126.881987,
+      "bbox": [
+        126.879794,
+        37.50027,
+        126.884179,
+        37.504456
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI021",
+      "name": "군자역",
+      "nameEn": "Gunja station",
+      "category": "인구밀집지역",
+      "order": 21,
+      "sourceRow": 22,
+      "lat": 37.556449,
+      "lng": 127.080617,
+      "bbox": [
+        127.076406,
+        37.554054,
+        127.084827,
+        37.558843
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI023",
+      "name": "대림역",
+      "nameEn": "Daerim station",
+      "category": "인구밀집지역",
+      "order": 22,
+      "sourceRow": 23,
+      "lat": 37.492429,
+      "lng": 126.89545,
+      "bbox": [
+        126.890503,
+        37.488765,
+        126.900397,
+        37.496093
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI024",
+      "name": "동대문역",
+      "nameEn": "Dongdaemun station",
+      "category": "인구밀집지역",
+      "order": 23,
+      "sourceRow": 24,
+      "lat": 37.571664,
+      "lng": 127.009656,
+      "bbox": [
+        127.006667,
+        37.569635,
+        127.012645,
+        37.573693
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI025",
+      "name": "뚝섬역",
+      "nameEn": "Ttukseom station",
+      "category": "인구밀집지역",
+      "order": 24,
+      "sourceRow": 25,
+      "lat": 37.54854,
+      "lng": 127.044977,
+      "bbox": [
+        127.03927,
+        37.545482,
+        127.050683,
+        37.551597
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI026",
+      "name": "미아사거리역",
+      "nameEn": "Miasageori station",
+      "category": "인구밀집지역",
+      "order": 25,
+      "sourceRow": 26,
+      "lat": 37.612206,
+      "lng": 127.031498,
+      "bbox": [
+        127.027938,
+        37.607801,
+        127.035058,
+        37.616611
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI027",
+      "name": "발산역",
+      "nameEn": "Balsan station",
+      "category": "인구밀집지역",
+      "order": 26,
+      "sourceRow": 27,
+      "lat": 37.559356,
+      "lng": 126.839446,
+      "bbox": [
+        126.833173,
+        37.555356,
+        126.845719,
+        37.563356
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI029",
+      "name": "사당역",
+      "nameEn": "Sadang station",
+      "category": "인구밀집지역",
+      "order": 27,
+      "sourceRow": 28,
+      "lat": 37.477155,
+      "lng": 126.981725,
+      "bbox": [
+        126.977907,
+        37.473551,
+        126.985543,
+        37.480759
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI030",
+      "name": "삼각지역",
+      "nameEn": "Samgakji station",
+      "category": "인구밀집지역",
+      "order": 28,
+      "sourceRow": 29,
+      "lat": 37.535508,
+      "lng": 126.973875,
+      "bbox": [
+        126.971842,
+        37.533994,
+        126.975908,
+        37.537021
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI031",
+      "name": "서울대입구역",
+      "nameEn": "Seoul National University station",
+      "category": "인구밀집지역",
+      "order": 29,
+      "sourceRow": 30,
+      "lat": 37.480801,
+      "lng": 126.952983,
+      "bbox": [
+        126.950149,
+        37.47804,
+        126.955818,
+        37.483562
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI032",
+      "name": "서울식물원·마곡나루역",
+      "nameEn": "Seoul Botanic Park·Magongnaru station",
+      "category": "인구밀집지역",
+      "order": 30,
+      "sourceRow": 31,
+      "lat": 37.567994,
+      "lng": 126.83099,
+      "bbox": [
+        126.824394,
+        37.563421,
+        126.837587,
+        37.572566
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI033",
+      "name": "서울역",
+      "nameEn": "Seoul station",
+      "category": "인구밀집지역",
+      "order": 31,
+      "sourceRow": 32,
+      "lat": 37.556394,
+      "lng": 126.973015,
+      "bbox": [
+        126.969171,
+        37.553087,
+        126.976858,
+        37.559701
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI034",
+      "name": "선릉역",
+      "nameEn": "Seolleung station",
+      "category": "인구밀집지역",
+      "order": 32,
+      "sourceRow": 33,
+      "lat": 37.506224,
+      "lng": 127.049532,
+      "bbox": [
+        127.041813,
+        37.501267,
+        127.05725,
+        37.511181
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI035",
+      "name": "성신여대입구역",
+      "nameEn": "Sungshin Women's University station",
+      "category": "인구밀집지역",
+      "order": 33,
+      "sourceRow": 34,
+      "lat": 37.592523,
+      "lng": 127.016802,
+      "bbox": [
+        127.014663,
+        37.590444,
+        127.018941,
+        37.594603
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI036",
+      "name": "수유역",
+      "nameEn": "Suyu station",
+      "category": "인구밀집지역",
+      "order": 34,
+      "sourceRow": 35,
+      "lat": 37.640798,
+      "lng": 127.026489,
+      "bbox": [
+        127.022123,
+        37.635899,
+        127.030855,
+        37.645696
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI037",
+      "name": "신논현역·논현역",
+      "nameEn": "Sinnonhyeon·Nonhyeon station",
+      "category": "인구밀집지역",
+      "order": 35,
+      "sourceRow": 36,
+      "lat": 37.507964,
+      "lng": 127.023165,
+      "bbox": [
+        127.019827,
+        37.504423,
+        127.026503,
+        37.511506
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI038",
+      "name": "신도림역",
+      "nameEn": "Sindorim station",
+      "category": "인구밀집지역",
+      "order": 36,
+      "sourceRow": 37,
+      "lat": 37.509021,
+      "lng": 126.89013,
+      "bbox": [
+        126.887921,
+        37.507597,
+        126.89234,
+        37.510445
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI039",
+      "name": "신림역",
+      "nameEn": "Sillim station",
+      "category": "인구밀집지역",
+      "order": 37,
+      "sourceRow": 38,
+      "lat": 37.484308,
+      "lng": 126.929738,
+      "bbox": [
+        126.926044,
+        37.480874,
+        126.933433,
+        37.487742
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI040",
+      "name": "신촌·이대역",
+      "nameEn": "Sinchon·Ewha Womans University station",
+      "category": "인구밀집지역",
+      "order": 38,
+      "sourceRow": 39,
+      "lat": 37.556714,
+      "lng": 126.939369,
+      "bbox": [
+        126.932096,
+        37.553186,
+        126.946643,
+        37.560241
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI041",
+      "name": "양재역",
+      "nameEn": "Yangjae station",
+      "category": "인구밀집지역",
+      "order": 39,
+      "sourceRow": 40,
+      "lat": 37.48517,
+      "lng": 127.033714,
+      "bbox": [
+        127.029375,
+        37.481821,
+        127.038052,
+        37.488519
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI042",
+      "name": "역삼역",
+      "nameEn": "Yeoksam station",
+      "category": "인구밀집지역",
+      "order": 40,
+      "sourceRow": 41,
+      "lat": 37.50028,
+      "lng": 127.038667,
+      "bbox": [
+        127.032894,
+        37.49646,
+        127.044439,
+        37.5041
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI043",
+      "name": "연신내역",
+      "nameEn": "Yeonsinnae station",
+      "category": "인구밀집지역",
+      "order": 41,
+      "sourceRow": 42,
+      "lat": 37.618534,
+      "lng": 126.921685,
+      "bbox": [
+        126.917877,
+        37.616031,
+        126.925494,
+        37.621038
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI044",
+      "name": "오목교역·목동운동장",
+      "nameEn": "Omokgyo·Mok-dong Stadium station",
+      "category": "인구밀집지역",
+      "order": 42,
+      "sourceRow": 43,
+      "lat": 37.530034,
+      "lng": 126.878152,
+      "bbox": [
+        126.869315,
+        37.522138,
+        126.886989,
+        37.537931
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI045",
+      "name": "왕십리역",
+      "nameEn": "Wangsimni station",
+      "category": "인구밀집지역",
+      "order": 43,
+      "sourceRow": 44,
+      "lat": 37.561948,
+      "lng": 127.038638,
+      "bbox": [
+        127.035613,
+        37.557965,
+        127.041664,
+        37.565931
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI046",
+      "name": "용산역",
+      "nameEn": "Yongsan station",
+      "category": "인구밀집지역",
+      "order": 44,
+      "sourceRow": 45,
+      "lat": 37.530152,
+      "lng": 126.961324,
+      "bbox": [
+        126.954507,
+        37.52484,
+        126.968141,
+        37.535463
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI047",
+      "name": "이태원역",
+      "nameEn": "Itaewon station",
+      "category": "인구밀집지역",
+      "order": 45,
+      "sourceRow": 46,
+      "lat": 37.534238,
+      "lng": 126.992872,
+      "bbox": [
+        126.990084,
+        37.532871,
+        126.99566,
+        37.535605
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI048",
+      "name": "장지역",
+      "nameEn": "Jangji station",
+      "category": "인구밀집지역",
+      "order": 46,
+      "sourceRow": 47,
+      "lat": 37.479374,
+      "lng": 127.122362,
+      "bbox": [
+        127.116869,
+        37.476237,
+        127.127855,
+        37.482511
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI049",
+      "name": "장한평역",
+      "nameEn": "Janghanpyeong station",
+      "category": "인구밀집지역",
+      "order": 47,
+      "sourceRow": 48,
+      "lat": 37.561638,
+      "lng": 127.064552,
+      "bbox": [
+        127.057975,
+        37.558103,
+        127.07113,
+        37.565172
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI050",
+      "name": "천호역",
+      "nameEn": "Cheonho station",
+      "category": "인구밀집지역",
+      "order": 48,
+      "sourceRow": 49,
+      "lat": 37.539181,
+      "lng": 127.12492,
+      "bbox": [
+        127.121997,
+        37.536942,
+        127.127842,
+        37.541419
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI051",
+      "name": "총신대입구(이수)역",
+      "nameEn": "Chongshin University(Isu) station",
+      "category": "인구밀집지역",
+      "order": 49,
+      "sourceRow": 50,
+      "lat": 37.486373,
+      "lng": 126.980875,
+      "bbox": [
+        126.97821,
+        37.482754,
+        126.98354,
+        37.489992
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI052",
+      "name": "충정로역",
+      "nameEn": "Chungjeongno station",
+      "category": "인구밀집지역",
+      "order": 50,
+      "sourceRow": 51,
+      "lat": 37.559603,
+      "lng": 126.963988,
+      "bbox": [
+        126.96035,
+        37.556947,
+        126.967626,
+        37.562259
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI053",
+      "name": "합정역",
+      "nameEn": "Hapjeong station",
+      "category": "인구밀집지역",
+      "order": 51,
+      "sourceRow": 52,
+      "lat": 37.549819,
+      "lng": 126.911689,
+      "bbox": [
+        126.904976,
+        37.545448,
+        126.918403,
+        37.554189
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI054",
+      "name": "혜화역",
+      "nameEn": "Hyehwa station",
+      "category": "인구밀집지역",
+      "order": 52,
+      "sourceRow": 53,
+      "lat": 37.582369,
+      "lng": 127.0011,
+      "bbox": [
+        126.997523,
+        37.579578,
+        127.004677,
+        37.585161
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI055",
+      "name": "홍대입구역(2호선)",
+      "nameEn": "Hongik University station(Line 2)",
+      "category": "인구밀집지역",
+      "order": 53,
+      "sourceRow": 54,
+      "lat": 37.556642,
+      "lng": 126.923213,
+      "bbox": [
+        126.92068,
+        37.55432,
+        126.925745,
+        37.558964
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI056",
+      "name": "회기역",
+      "nameEn": "Hoegi station",
+      "category": "인구밀집지역",
+      "order": 54,
+      "sourceRow": 55,
+      "lat": 37.590346,
+      "lng": 127.056104,
+      "bbox": [
+        127.049756,
+        37.587713,
+        127.062452,
+        37.592979
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI058",
+      "name": "가락시장",
+      "nameEn": "Garak Market",
+      "category": "발달상권",
+      "order": 55,
+      "sourceRow": 56,
+      "lat": 37.493415,
+      "lng": 127.111446,
+      "bbox": [
+        127.103644,
+        37.489645,
+        127.119248,
+        37.497185
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI059",
+      "name": "가로수길",
+      "nameEn": "Garosu-gil",
+      "category": "발달상권",
+      "order": 56,
+      "sourceRow": 57,
+      "lat": 37.521639,
+      "lng": 127.02314,
+      "bbox": [
+        127.017816,
+        37.516112,
+        127.028465,
+        37.527166
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI060",
+      "name": "광장(전통)시장",
+      "nameEn": "Gwangjang(Traditional) Market",
+      "category": "발달상권",
+      "order": 57,
+      "sourceRow": 58,
+      "lat": 37.569925,
+      "lng": 126.999943,
+      "bbox": [
+        126.997852,
+        37.568843,
+        127.002034,
+        37.571007
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI061",
+      "name": "김포공항",
+      "nameEn": "Gimpo Airport",
+      "category": "발달상권",
+      "order": 58,
+      "sourceRow": 59,
+      "lat": 37.562571,
+      "lng": 126.801018,
+      "bbox": [
+        126.79369,
+        37.555373,
+        126.808346,
+        37.569769
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI063",
+      "name": "노량진",
+      "nameEn": "Noryangjin",
+      "category": "발달상권",
+      "order": 59,
+      "sourceRow": 60,
+      "lat": 37.513727,
+      "lng": 126.945348,
+      "bbox": [
+        126.935093,
+        37.510852,
+        126.955604,
+        37.516601
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI064",
+      "name": "덕수궁길·정동길",
+      "nameEn": "Deoksugung-gil·Jeongdong-gil",
+      "category": "발달상권",
+      "order": 60,
+      "sourceRow": 61,
+      "lat": 37.566465,
+      "lng": 126.972504,
+      "bbox": [
+        126.96791,
+        37.564184,
+        126.977097,
+        37.568746
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI066",
+      "name": "북촌한옥마을",
+      "nameEn": "Bukchon Hanok Village",
+      "category": "발달상권",
+      "order": 61,
+      "sourceRow": 62,
+      "lat": 37.582905,
+      "lng": 126.984515,
+      "bbox": [
+        126.979224,
+        37.575402,
+        126.989806,
+        37.590409
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI067",
+      "name": "서촌",
+      "nameEn": "Seochon",
+      "category": "발달상권",
+      "order": 62,
+      "sourceRow": 63,
+      "lat": 37.580156,
+      "lng": 126.969015,
+      "bbox": [
+        126.963796,
+        37.575906,
+        126.974233,
+        37.584405
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI068",
+      "name": "성수카페거리",
+      "nameEn": "Seongsu Cafe Street",
+      "category": "발달상권",
+      "order": 63,
+      "sourceRow": 64,
+      "lat": 37.543039,
+      "lng": 127.056881,
+      "bbox": [
+        127.049527,
+        37.539186,
+        127.064235,
+        37.546891
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI070",
+      "name": "쌍문역",
+      "nameEn": "Ssangmun-dong station",
+      "category": "인구밀집지역",
+      "order": 64,
+      "sourceRow": 65,
+      "lat": 37.647121,
+      "lng": 127.033765,
+      "bbox": [
+        127.030093,
+        37.64287,
+        127.037437,
+        37.651373
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI071",
+      "name": "압구정로데오거리",
+      "nameEn": "Apgujeong Rodeo Street",
+      "category": "발달상권",
+      "order": 65,
+      "sourceRow": 66,
+      "lat": 37.525346,
+      "lng": 127.040221,
+      "bbox": [
+        127.0331,
+        37.521523,
+        127.047342,
+        37.52917
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI072",
+      "name": "여의도",
+      "nameEn": "Yeouido",
+      "category": "발달상권",
+      "order": 66,
+      "sourceRow": 67,
+      "lat": 37.525809,
+      "lng": 126.927052,
+      "bbox": [
+        126.909806,
+        37.515575,
+        126.944297,
+        37.536043
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI073",
+      "name": "연남동",
+      "nameEn": "Yeonnam-dong",
+      "category": "발달상권",
+      "order": 67,
+      "sourceRow": 68,
+      "lat": 37.561422,
+      "lng": 126.922215,
+      "bbox": [
+        126.916289,
+        37.557572,
+        126.928141,
+        37.565273
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI074",
+      "name": "영등포 타임스퀘어",
+      "nameEn": "Yeongdeungpo Time square",
+      "category": "발달상권",
+      "order": 68,
+      "sourceRow": 69,
+      "lat": 37.5167,
+      "lng": 126.906759,
+      "bbox": [
+        126.901091,
+        37.513417,
+        126.912427,
+        37.519983
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI076",
+      "name": "용리단길",
+      "nameEn": "Yongnidan-gil",
+      "category": "발달상권",
+      "order": 69,
+      "sourceRow": 70,
+      "lat": 37.531205,
+      "lng": 126.971162,
+      "bbox": [
+        126.968825,
+        37.529308,
+        126.973499,
+        37.533101
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI077",
+      "name": "이태원 앤틱가구거리",
+      "nameEn": "Itaewon Antiques street",
+      "category": "발달상권",
+      "order": 70,
+      "sourceRow": 71,
+      "lat": 37.531956,
+      "lng": 126.993327,
+      "bbox": [
+        126.989935,
+        37.529391,
+        126.996719,
+        37.534521
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI078",
+      "name": "인사동",
+      "nameEn": "Insa-dong",
+      "category": "발달상권",
+      "order": 71,
+      "sourceRow": 72,
+      "lat": 37.5738,
+      "lng": 126.986804,
+      "bbox": [
+        126.983002,
+        37.570187,
+        126.990606,
+        37.577413
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI079",
+      "name": "창동 신경제 중심지",
+      "nameEn": "Changdong New Economic Center",
+      "category": "발달상권",
+      "order": 72,
+      "sourceRow": 73,
+      "lat": 37.656569,
+      "lng": 127.054512,
+      "bbox": [
+        127.04205,
+        37.651118,
+        127.066974,
+        37.66202
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI080",
+      "name": "청담동 명품거리",
+      "nameEn": "Cheongdam-dong Luxury Fashion street",
+      "category": "발달상권",
+      "order": 73,
+      "sourceRow": 74,
+      "lat": 37.526047,
+      "lng": 127.043711,
+      "bbox": [
+        127.039137,
+        37.523192,
+        127.048285,
+        37.528902
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI081",
+      "name": "청량리 제기동 일대 전통시장",
+      "nameEn": "Traditional market in Cheongnyangni Jegi-dong ",
+      "category": "발달상권",
+      "order": 74,
+      "sourceRow": 75,
+      "lat": 37.58067,
+      "lng": 127.040408,
+      "bbox": [
+        127.034915,
+        37.578205,
+        127.045902,
+        37.583136
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI082",
+      "name": "해방촌·경리단길",
+      "nameEn": "Haebangchon·Gyeongnidan-gil",
+      "category": "발달상권",
+      "order": 75,
+      "sourceRow": 76,
+      "lat": 37.54266,
+      "lng": 126.988321,
+      "bbox": [
+        126.982939,
+        37.538291,
+        126.993703,
+        37.54703
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI083",
+      "name": "DDP(동대문디자인플라자)",
+      "nameEn": "DDP(Dongdaemun Design Plaza)",
+      "category": "발달상권",
+      "order": 76,
+      "sourceRow": 77,
+      "lat": 37.567117,
+      "lng": 127.010211,
+      "bbox": [
+        127.00772,
+        37.565488,
+        127.012702,
+        37.568746
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI084",
+      "name": "DMC(디지털미디어시티)",
+      "nameEn": "DMC(Digital Media City)",
+      "category": "발달상권",
+      "order": 77,
+      "sourceRow": 78,
+      "lat": 37.579767,
+      "lng": 126.89206,
+      "bbox": [
+        126.882035,
+        37.572982,
+        126.902086,
+        37.586551
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI085",
+      "name": "강서한강공원",
+      "nameEn": "Gangseo Hangang Park",
+      "category": "공원",
+      "order": 78,
+      "sourceRow": 79,
+      "lat": 37.58609,
+      "lng": 126.820015,
+      "bbox": [
+        126.810661,
+        37.580846,
+        126.829369,
+        37.591335
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI086",
+      "name": "고척돔",
+      "nameEn": "Gocheok Dome",
+      "category": "공원",
+      "order": 79,
+      "sourceRow": 80,
+      "lat": 37.497369,
+      "lng": 126.866927,
+      "bbox": [
+        126.864872,
+        37.495092,
+        126.868982,
+        37.499645
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI087",
+      "name": "광나루한강공원",
+      "nameEn": "Gwangnaru Hangang Park",
+      "category": "공원",
+      "order": 80,
+      "sourceRow": 81,
+      "lat": 37.549715,
+      "lng": 127.133233,
+      "bbox": [
+        127.101475,
+        37.524005,
+        127.164991,
+        37.575424
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI088",
+      "name": "광화문광장",
+      "nameEn": "Gwanghwamun Square",
+      "category": "공원",
+      "order": 81,
+      "sourceRow": 82,
+      "lat": 37.573253,
+      "lng": 126.976763,
+      "bbox": [
+        126.974396,
+        37.57032,
+        126.97913,
+        37.576187
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI089",
+      "name": "국립중앙박물관·용산가족공원",
+      "nameEn": "The National Museum of Korea·Yongsan Family Park",
+      "category": "공원",
+      "order": 82,
+      "sourceRow": 83,
+      "lat": 37.522594,
+      "lng": 126.981256,
+      "bbox": [
+        126.976707,
+        37.519923,
+        126.985805,
+        37.525265
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI090",
+      "name": "난지한강공원",
+      "nameEn": "Nanji Hangang Park",
+      "category": "공원",
+      "order": 83,
+      "sourceRow": 84,
+      "lat": 37.566572,
+      "lng": 126.878061,
+      "bbox": [
+        126.86406,
+        37.558395,
+        126.892062,
+        37.574749
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI091",
+      "name": "남산공원",
+      "nameEn": "Namsan Park",
+      "category": "공원",
+      "order": 84,
+      "sourceRow": 85,
+      "lat": 37.551132,
+      "lng": 126.992459,
+      "bbox": [
+        126.976548,
+        37.540905,
+        127.00837,
+        37.561359
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI092",
+      "name": "노들섬",
+      "nameEn": "Nodeul island",
+      "category": "공원",
+      "order": 85,
+      "sourceRow": 86,
+      "lat": 37.517617,
+      "lng": 126.958734,
+      "bbox": [
+        126.954938,
+        37.516051,
+        126.962531,
+        37.519182
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI093",
+      "name": "뚝섬한강공원",
+      "nameEn": "Ttukseom Hangang Park",
+      "category": "공원",
+      "order": 86,
+      "sourceRow": 87,
+      "lat": 37.529882,
+      "lng": 127.07386,
+      "bbox": [
+        127.058689,
+        37.526462,
+        127.089032,
+        37.533301
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI094",
+      "name": "망원한강공원",
+      "nameEn": "Mangwon Hangang Park",
+      "category": "공원",
+      "order": 87,
+      "sourceRow": 88,
+      "lat": 37.553278,
+      "lng": 126.901004,
+      "bbox": [
+        126.89184,
+        37.546054,
+        126.910168,
+        37.560501
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI095",
+      "name": "반포한강공원",
+      "nameEn": "Banpo Hangang Park",
+      "category": "공원",
+      "order": 88,
+      "sourceRow": 89,
+      "lat": 37.510852,
+      "lng": 126.993848,
+      "bbox": [
+        126.980254,
+        37.504326,
+        127.007443,
+        37.517378
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI096",
+      "name": "북서울꿈의숲",
+      "nameEn": "Dream Forest",
+      "category": "공원",
+      "order": 89,
+      "sourceRow": 90,
+      "lat": 37.622304,
+      "lng": 127.041182,
+      "bbox": [
+        127.03593,
+        37.615084,
+        127.046434,
+        37.629523
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI098",
+      "name": "서리풀공원·몽마르뜨공원",
+      "nameEn": "Seoripul Park·Montmartre Park",
+      "category": "공원",
+      "order": 90,
+      "sourceRow": 91,
+      "lat": 37.49294,
+      "lng": 127.00353,
+      "bbox": [
+        126.996715,
+        37.482697,
+        127.010345,
+        37.503182
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI100",
+      "name": "서울대공원",
+      "nameEn": "Seoul Grand Park",
+      "category": "공원",
+      "order": 91,
+      "sourceRow": 92,
+      "lat": 37.427676,
+      "lng": 127.015878,
+      "bbox": [
+        127.001378,
+        37.415511,
+        127.030378,
+        37.439841
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI101",
+      "name": "서울숲공원",
+      "nameEn": "Seoul Forest",
+      "category": "공원",
+      "order": 92,
+      "sourceRow": 93,
+      "lat": 37.544182,
+      "lng": 127.035747,
+      "bbox": [
+        127.027507,
+        37.537185,
+        127.043986,
+        37.551178
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI102",
+      "name": "아차산",
+      "nameEn": "Achasan",
+      "category": "공원",
+      "order": 93,
+      "sourceRow": 94,
+      "lat": 37.565134,
+      "lng": 127.104432,
+      "bbox": [
+        127.088022,
+        37.550848,
+        127.120841,
+        37.579419
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI103",
+      "name": "양화한강공원",
+      "nameEn": "Yanghwa Hangang Park",
+      "category": "공원",
+      "order": 94,
+      "sourceRow": 95,
+      "lat": 37.541355,
+      "lng": 126.898264,
+      "bbox": [
+        126.889701,
+        37.535308,
+        126.906827,
+        37.547402
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI104",
+      "name": "어린이대공원",
+      "nameEn": "Children's Grand Park",
+      "category": "공원",
+      "order": 95,
+      "sourceRow": 96,
+      "lat": 37.549107,
+      "lng": 127.081912,
+      "bbox": [
+        127.074127,
+        37.545108,
+        127.089696,
+        37.553105
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI105",
+      "name": "여의도한강공원",
+      "nameEn": "Yeouido Hangang Park",
+      "category": "공원",
+      "order": 96,
+      "sourceRow": 97,
+      "lat": 37.526841,
+      "lng": 126.926568,
+      "bbox": [
+        126.909216,
+        37.51783,
+        126.94392,
+        37.535852
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI106",
+      "name": "월드컵공원",
+      "nameEn": "World Cup Park",
+      "category": "공원",
+      "order": 97,
+      "sourceRow": 98,
+      "lat": 37.569895,
+      "lng": 126.882745,
+      "bbox": [
+        126.865775,
+        37.559764,
+        126.899714,
+        37.580025
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI107",
+      "name": "응봉산",
+      "nameEn": "Eungbongsan",
+      "category": "공원",
+      "order": 98,
+      "sourceRow": 99,
+      "lat": 37.549161,
+      "lng": 127.030096,
+      "bbox": [
+        127.024543,
+        37.543868,
+        127.03565,
+        37.554455
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI108",
+      "name": "이촌한강공원",
+      "nameEn": "Ichon Hangang Park",
+      "category": "공원",
+      "order": 99,
+      "sourceRow": 100,
+      "lat": 37.522407,
+      "lng": 126.967041,
+      "bbox": [
+        126.951069,
+        37.514401,
+        126.983013,
+        37.530414
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI109",
+      "name": "잠실종합운동장",
+      "nameEn": "Jamsil (Seoul) Sports Complex",
+      "category": "공원",
+      "order": 100,
+      "sourceRow": 101,
+      "lat": 37.514446,
+      "lng": 127.07394,
+      "bbox": [
+        127.069736,
+        37.510832,
+        127.078144,
+        37.518059
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI110",
+      "name": "잠실한강공원",
+      "nameEn": "Jamsil Hangang Park",
+      "category": "공원",
+      "order": 101,
+      "sourceRow": 102,
+      "lat": 37.520365,
+      "lng": 127.084803,
+      "bbox": [
+        127.067691,
+        37.516972,
+        127.101916,
+        37.523759
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI111",
+      "name": "잠원한강공원",
+      "nameEn": "Jamwon Hangang Park",
+      "category": "공원",
+      "order": 102,
+      "sourceRow": 103,
+      "lat": 37.524333,
+      "lng": 127.01498,
+      "bbox": [
+        127.00624,
+        37.516489,
+        127.023719,
+        37.532178
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI112",
+      "name": "청계산",
+      "nameEn": "Cheonggyesan",
+      "category": "공원",
+      "order": 103,
+      "sourceRow": 104,
+      "lat": 37.442467,
+      "lng": 127.052295,
+      "bbox": [
+        127.034752,
+        37.428286,
+        127.069837,
+        37.456649
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI114",
+      "name": "북창동 먹자골목",
+      "nameEn": "Bukchang-dong food alley",
+      "category": "발달상권",
+      "order": 104,
+      "sourceRow": 105,
+      "lat": 37.562185,
+      "lng": 126.978777,
+      "bbox": [
+        126.976006,
+        37.560316,
+        126.981548,
+        37.564054
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI115",
+      "name": "남대문시장",
+      "nameEn": "Namdaemun Market",
+      "category": "발달상권",
+      "order": 105,
+      "sourceRow": 106,
+      "lat": 37.559719,
+      "lng": 126.978876,
+      "bbox": [
+        126.975627,
+        37.557681,
+        126.982126,
+        37.561756
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI116",
+      "name": "익선동",
+      "nameEn": "Ikseon-dong",
+      "category": "발달상권",
+      "order": 106,
+      "sourceRow": 107,
+      "lat": 37.57293,
+      "lng": 126.989695,
+      "bbox": [
+        126.987261,
+        37.570193,
+        126.992129,
+        37.575666
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI117",
+      "name": "신정네거리역",
+      "nameEn": "Shinjeongnegeori Station",
+      "category": "인구밀집지역",
+      "order": 107,
+      "sourceRow": 108,
+      "lat": 37.520805,
+      "lng": 126.855714,
+      "bbox": [
+        126.851562,
+        37.518699,
+        126.859866,
+        37.522912
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI118",
+      "name": "잠실새내역",
+      "nameEn": "Jamsil Saenae Station",
+      "category": "인구밀집지역",
+      "order": 108,
+      "sourceRow": 109,
+      "lat": 37.510029,
+      "lng": 127.083617,
+      "bbox": [
+        127.078313,
+        37.507756,
+        127.088921,
+        37.512301
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI119",
+      "name": "잠실역",
+      "nameEn": "Jamsil Station",
+      "category": "인구밀집지역",
+      "order": 109,
+      "sourceRow": 110,
+      "lat": 37.512302,
+      "lng": 127.100444,
+      "bbox": [
+        127.094746,
+        37.50983,
+        127.106142,
+        37.514774
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI120",
+      "name": "잠실롯데타워·석촌호수",
+      "nameEn": "Jamsil Lotte Tower·SeokchonhosuLake",
+      "category": "발달상권",
+      "order": 110,
+      "sourceRow": 111,
+      "lat": 37.511648,
+      "lng": 127.104186,
+      "bbox": [
+        127.092721,
+        37.505837,
+        127.115651,
+        37.51746
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI121",
+      "name": "송리단길·호수단길",
+      "nameEn": "Songridan-gil·Hosudan-gil",
+      "category": "발달상권",
+      "order": 111,
+      "sourceRow": 112,
+      "lat": 37.50804,
+      "lng": 127.104731,
+      "bbox": [
+        127.097223,
+        37.504156,
+        127.11224,
+        37.511925
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI122",
+      "name": "신촌 스타광장",
+      "nameEn": "Shinchon Star Plaza",
+      "category": "발달상권",
+      "order": 112,
+      "sourceRow": 113,
+      "lat": 37.556517,
+      "lng": 126.936925,
+      "bbox": [
+        126.935968,
+        37.55534,
+        126.937882,
+        37.557694
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI123",
+      "name": "보라매공원",
+      "nameEn": "Boramae Park",
+      "category": "공원",
+      "order": 113,
+      "sourceRow": 114,
+      "lat": 37.49335,
+      "lng": 126.919843,
+      "bbox": [
+        126.915565,
+        37.490516,
+        126.92412,
+        37.496183
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI124",
+      "name": "서대문독립공원",
+      "nameEn": "Seodaemun Independence Park",
+      "category": "공원",
+      "order": 114,
+      "sourceRow": 115,
+      "lat": 37.574198,
+      "lng": 126.956914,
+      "bbox": [
+        126.953792,
+        37.571611,
+        126.960035,
+        37.576786
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI125",
+      "name": "안양천",
+      "nameEn": "Anyangcheon River",
+      "category": "공원",
+      "order": 115,
+      "sourceRow": 116,
+      "lat": 37.518825,
+      "lng": 126.879571,
+      "bbox": [
+        126.877014,
+        37.513666,
+        126.882129,
+        37.523984
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI126",
+      "name": "여의서로",
+      "nameEn": "Yeouiseoro",
+      "category": "공원",
+      "order": 116,
+      "sourceRow": 117,
+      "lat": 37.531239,
+      "lng": 126.916277,
+      "bbox": [
+        126.909806,
+        37.526435186873556,
+        126.92274836253422,
+        37.536043
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI127",
+      "name": "올림픽공원",
+      "nameEn": "Olympic Park",
+      "category": "공원",
+      "order": 117,
+      "sourceRow": 118,
+      "lat": 37.519122,
+      "lng": 127.12187,
+      "bbox": [
+        127.112787,
+        37.512331,
+        127.130953,
+        37.525913
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI128",
+      "name": "홍제폭포",
+      "nameEn": "Hongje Waterfall",
+      "category": "공원",
+      "order": 118,
+      "sourceRow": 119,
+      "lat": 37.580661,
+      "lng": 126.936933,
+      "bbox": [
+        126.936011,
+        37.579752,
+        126.937856,
+        37.581569
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI129",
+      "name": "송현녹지광장",
+      "nameEn": "Songhyeon Green Plaza",
+      "category": "공원",
+      "order": 119,
+      "sourceRow": 120,
+      "lat": 37.577824,
+      "lng": 126.984433,
+      "bbox": [
+        126.97954878602417,
+        37.575585645369614,
+        126.98931774822879,
+        37.580063055372065
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI130",
+      "name": "시의회 앞",
+      "nameEn": "City Council",
+      "category": "인구밀집지역",
+      "order": 120,
+      "sourceRow": 121,
+      "lat": 37.567037,
+      "lng": 126.976936,
+      "bbox": [
+        126.97576850312576,
+        37.56372218864732,
+        126.97810324209962,
+        37.570350827072545
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    },
+    {
+      "code": "POI131",
+      "name": "숭례문",
+      "nameEn": "Sungnyemun Gate",
+      "category": "인구밀집지역",
+      "order": 121,
+      "sourceRow": 122,
+      "lat": 37.560501,
+      "lng": 126.97544,
+      "bbox": [
+        126.97323524406796,
+        37.55804039395246,
+        126.9776444807781,
+        37.562962427672424
+      ],
+      "coordinateBasis": "derived_official_polygon_bbox_center",
+      "sampleAllowed": false
+    }
+  ]
+}

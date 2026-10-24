@@ -4,7 +4,8 @@ from pathlib import Path
 
 project_root = Path(__file__).resolve().parent
 root = project_root / 'inputs'
-out = project_root / 'dist'
+out = project_root / 'work' / 'legacy-snapshot'
+out.mkdir(parents=True, exist_ok=True)
 jp_raw = json.loads((root/'population-verified.json').read_text())
 meta = {
     '百人町1丁目': ('hyakunin1','햐쿠닌초 1초메','오쿠보역 일대','햐쿠닌초1',35.6996,139.6996),

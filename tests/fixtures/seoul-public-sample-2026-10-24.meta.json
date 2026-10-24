@@ -1,0 +1,12 @@
+{
+  "url": "http://openapi.seoul.go.kr:8088/sample/json/citydata/1/5/%EA%B4%91%ED%99%94%EB%AC%B8%C2%B7%EB%8D%95%EC%88%98%EA%B6%81",
+  "httpStatus": 200,
+  "contentType": "application/json;charset=UTF-8",
+  "checkedAt": "2026-10-24T10:10:03.160462+00:00",
+  "sha256": "686951dcdd8d2a7b6d5c031b750d31a3b90d6c8e7b64845d53a99319cf707caf",
+  "fixtureKind": "Captured actual official unauthenticated sample response; not a synthetic population fixture.",
+  "provider": "서울특별시 열린데이터광장",
+  "docs": "https://data.seoul.go.kr/dataList/OA-21285/A/1/datasetView.do",
+  "scope": "광화문·덕수궁 POI009 sample only. No API credential or personal account data.",
+  "caution": "Running provider.test.mjs replays this fixed fixture and does not prove a current upstream connection. PPLTN_TIME is the provider data update time; forecasts are excluded."
+}

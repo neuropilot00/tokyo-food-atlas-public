@@ -2,8 +2,11 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
-const file = require.resolve('../dist/domain.js');
-const { calculate } = require('../dist/domain.js');
+const file = require.resolve('../public/domain.js');
+// The project is ESM; execute the deployed UMD in an isolated CommonJS wrapper.
+const umd = { exports: {} };
+vm.runInThisContext('(function(module, window) {\n' + fs.readFileSync(file, 'utf8') + '\n})', { filename: file })(umd, {});
+const { calculate } = umd.exports;
 const base = {
   rent: 400000, management: 50000, payroll: 750000, otherFixed: 200000,
   depreciation: 100000, variableRate: 0.35, ticket: 1800, days: 26,
