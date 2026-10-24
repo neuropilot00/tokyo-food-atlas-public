@@ -12,7 +12,7 @@ export default function AtlasApp(){
   if(window.__atlasLoaded){window.location.reload();return;}
   window.__atlasLoaded=true;
   const script=(src:string)=>new Promise<void>((resolve,reject)=>{const s=document.createElement('script');s.src=src;s.onload=()=>resolve();s.onerror=reject;document.body.appendChild(s);});
-  (async()=>{await script('/cloud-sync.js');await window.AtlasCloud?.init();await script('/domain.js');await script('/recommend.js');await script('/app.js');window.__atlasBootCompleted=true;})().catch(()=>{
+  (async()=>{await script('/cloud-sync.js');await window.AtlasCloud?.init();await script('/domain.js');await script('/recommend.js');await script('/opening-plan.js');await script('/opening-ui.js');await script('/app.js');window.__atlasBootCompleted=true;})().catch(()=>{
    const main=document.getElementById('main');if(main)main.innerHTML='<div class="empty-state"><h2>앱을 불러오지 못했습니다.</h2><p>연결을 확인하고 다시 열어 주세요.</p><button class="button" onclick="location.reload()">다시 불러오기</button></div>';
   });
  },[]);

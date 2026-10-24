@@ -14,6 +14,14 @@
 
 개인 기록 저장·계정 격리·암호화·동기화 충돌 처리는 자동 테스트를 통과했습니다. 운영의 로그인한 두 기기 간 동기화는 이번 환경에서 직접 확인하지 못했습니다. 비로그인 요청이 개인 기록 API에 접근하면 401로 거절되는 것은 운영에서 확인했습니다. 실제 소유자 계정 로그인 후 베타 이용 과정에서 확인할 항목입니다.
 
+## 강남 갈매기살 · 2억원 개점 계획
+
+한국 첫 화면의 **개점** 탭에서 보증금·권리금·인테리어·주방·배기·개점 준비비와 직원, 운영자금을 함께 조정합니다. 기본 예시는 개점 자금 1억3천만원, 공사예비비 1천만원, 운영자금 6천만원입니다. 사용자 확정 조건은 강남권·갈매기살·총예산 2억원이며, 그 밖의 값은 실제 견적·채용조건·매출을 뜻하지 않는 편집 가능한 계획입니다.
+
+대표 상근과 점장 추가 운영을 비교하고, 부가세 포함/별도/미확인, 보험·퇴직 준비액, 대표 생활비, 대출 원금, 손익분기 고객 수, 좌석 수용량, 무매출 지속기간을 구분합니다. 미입력은 0원으로 취급하지 않습니다. 공사비 20% 상승 시 예비비를 먼저 사용하는 조건 악화 계산, 등록 매물의 비용 가져오기, 12개 개점 확인 기록, 계정별 저장·JSON 내보내기·인쇄를 제공합니다.
+
+월급·보험 준비율·회전·객단가·원가율은 가정이며 법정 급여 검증이나 매출 예측이 아닙니다. 실제 근무표·공사견적·배기·소방·신고 가능 여부를 확인해야 합니다. 예산별 실행 조건과 근거는 [강남 2억원 실행 검토안](docs/gangnam-200m-plan.md)을 참조하세요.
+
 ## 실제 자료 범위
 
 | 자료 | 수록 범위 | 원천 기준 |
@@ -56,6 +64,7 @@
 - Vinext / React 19 / Vite / Cloudflare Workers
 - `app/atlas-app.tsx`: 기존 검증된 DOM 화면을 모바일 웹앱으로 로드하는 클라이언트 브리지
 - `public/app.js`, `public/beta-ui.js`: 화면·지역 검색·연결 설정·매물 입력
+- `public/opening-plan.js`, `public/opening-ui.js`, `public/opening.css`: 개점 현금계획·직원·예산·확인 기록
 - `public/domain.js`: 재무 계산; `public/recommend.js`: 조건별 업종 검토
 - `public/cloud-sync.js`: 계정별 기기 저장·전송 대기열·충돌 처리
 - `lib/atlas-server.mjs`: 인증·D1 저장·암호화 키·API·MCP·자료 릴리스
@@ -76,6 +85,7 @@ npm run install:ci
 npm run build
 npm run db:generate
 node tests/finance.cjs
+node tests/opening-plan.cjs
 node tests/recommend.cjs
 node tests/cloud-sync.test.mjs
 node tests/provider.test.mjs
