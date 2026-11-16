@@ -5,3 +5,5 @@
 
 
 .op-warning-list{font-size:10px;color:#7a6b4e;margin-top:16px;border-top:1px solid var(--line);padding-top:12px}.op-warning-list summary{cursor:pointer;font-weight:500}.op-warning-list ul{padding-left:17px;line-height:1.8;margin-bottom:0}.op-cost>.op-field{margin-top:12px}
+.op-customer-chart{padding:18px;background:#fff;border:1px solid var(--line);border-radius:12px;margin:18px 0}.op-customer-chart h3{font-size:16px;margin-bottom:16px}
+@media(max-width:699px){.op-footnote,.op-truth,.op-section-head p,.op-save-state,.op-field>span,.op-check small{font-size:12px!important;line-height:1.75}.op-jumps{gap:8px}.op-jumps a{padding:11px 13px;min-height:44px;display:inline-flex;align-items:center}.op-input input,.op-field select,.op-field>input{font-size:16px!important}.op-metric strong{overflow-wrap:anywhere}.op-customer-chart{padding:14px}.op-cost-top{gap:12px}}

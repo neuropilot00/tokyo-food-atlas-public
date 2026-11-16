@@ -1,0 +1,11 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');const c={module:{exports:{}}};vm.runInNewContext(fs.readFileSync('public/property-compare.js','utf8'),c);const {analyze,csv}=c.module.exports;
+assert.equal(analyze({rent:100,management:20,deposit:1000,transfer:0}).monthly,120);
+assert.equal(analyze({rent:100,management:null,deposit:1000,transfer:0}).monthly,null);
+assert.equal(analyze({rent:'100',management:20}).monthly,null);
+assert.equal(analyze({deposit:1000,transfer:0}).upfront,1000);
+assert.equal(analyze({rent:1e308,management:1e308}).monthly,null);
+assert.equal(analyze({sourceDate:'2026-10-01'},new Date('2026-11-16')).stale,true);
+assert.equal(analyze({sourceDate:'2026-11-15'},new Date('2026-11-16')).stale,false);
+assert.equal(analyze({sourceDate:'2027-01-01'},new Date('2026-11-16')).stale,true);
+assert.ok(csv([{title:'=cmd',rent:null}], 'JPY').includes('"\'=cmd"'));assert.ok(csv([{title:'a"b'}],'JPY').includes('"a""b"'));
+console.log('PASS property comparison: unknown/zero/overflow/date and CSV injection guards');

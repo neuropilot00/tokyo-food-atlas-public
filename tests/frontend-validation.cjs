@@ -111,3 +111,17 @@ console.log('PASS: manual property blank/null versus explicit zero; invalid calc
   assert.match(node('#beta-live').innerHTML,/상권의 값으로 대체하지/);
   console.log('PASS: live catalog selection; sample-only restriction; configured-key request uses exact selected official code; displayed place and scope warning update.');
 })().catch(error=>{console.error(error);process.exitCode=1;});
+
+// Visual summaries share validated totals, retain zero/missing semantics, and expose exact labels.
+run(`state.country='KR';loadCountry();state.finance={...defaults.KR};calculateFinance();`);
+const visual=node('#finance-output').innerHTML;
+assert.match(visual,/월 매출과 손익분기/);
+assert.match(visual,/초기자금 배분/);
+assert.match(visual,/실제 매출 예측이 아닙니다/);
+assert.doesNotMatch(visual,/NaN|Infinity|width:-/);
+run(`state.finance.deposit=null;calculateFinance();`);
+assert.doesNotMatch(node('#finance-output').innerHTML,/atlas-stacked/,'Unknown cost must not produce a complete chart');
+run(`state.finance={...defaults.KR,deposit:0,transfer:0,fitout:0,openingCosts:0,reserve:0};calculateFinance();`);
+assert.match(node('#finance-output').innerHTML,/배정한 초기 자금이 0/);
+assert.doesNotMatch(node('#finance-output').innerHTML,/NaN|Infinity/);
+console.log('PASS: visual finance summaries preserve missing, zero and valid totals.');
