@@ -8,4 +8,8 @@ assert.equal(analyze({sourceDate:'2026-10-01'},new Date('2026-11-16')).stale,tru
 assert.equal(analyze({sourceDate:'2026-11-15'},new Date('2026-11-16')).stale,false);
 assert.equal(analyze({sourceDate:'2027-01-01'},new Date('2026-11-16')).stale,true);
 assert.ok(csv([{title:'=cmd',rent:null}], 'JPY').includes('"\'=cmd"'));assert.ok(csv([{title:'a"b'}],'JPY').includes('"a""b"'));
+assert.equal(analyze({rent:100,management:0,additionalMonthly:10}).monthly,110);
+assert.equal(analyze({rent:100,management:0,additionalMonthly:null}).monthly,null);
+assert.equal(analyze({sourceDate:'2026.11.15'},new Date('2026-11-16')).stale,false);
+assert.equal(analyze({sourceDate:'2026-02-30'},new Date('2026-11-16')).ageDays,null);
 console.log('PASS property comparison: unknown/zero/overflow/date and CSV injection guards');
