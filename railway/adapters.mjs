@@ -1,7 +1,7 @@
 import {DatabaseSync} from 'node:sqlite';
-import {mkdirSync,readFileSync,writeFileSync,existsSync} from 'node:fs';
+import {mkdirSync,readFileSync,writeFileSync,openSync,closeSync,fsyncSync,linkSync,unlinkSync} from 'node:fs';
 import {join,resolve,sep} from 'node:path';
-import {createHash} from 'node:crypto';
+import {createHash,randomUUID} from 'node:crypto';
 export function database(path,migration){
  const sql=new DatabaseSync(path);sql.exec('PRAGMA journal_mode=WAL; PRAGMA busy_timeout=5000; PRAGMA foreign_keys=ON;');
  sql.exec('CREATE TABLE IF NOT EXISTS atlas_schema(version INTEGER PRIMARY KEY)');
@@ -18,7 +18,7 @@ export function bucket(root){
  return {get:async key=>get(key),head:async key=>get(key),put:async(key,body,options={})=>{
   // The application only writes immutable release objects. Refuse overwrites.
   if(options.onlyIf?.etagDoesNotMatch!=='*')throw Error('Immutable object write required');
-  try{writeFileSync(path(key),JSON.stringify({key,body:String(body),customMetadata:options.customMetadata||{}}),{flag:'wx',mode:0o600});return {key};}catch(e){if(e.code==='EEXIST')return null;throw e;}
+  const temp=join(root,'.pending-'+randomUUID());let fd;try{fd=openSync(temp,'wx',0o600);writeFileSync(fd,JSON.stringify({key,body:String(body),customMetadata:options.customMetadata||{}}));fsyncSync(fd);closeSync(fd);fd=undefined;linkSync(temp,path(key));const directory=openSync(root,'r');try{fsyncSync(directory);}finally{closeSync(directory);}return {key};}catch(e){if(e.code==='EEXIST')return null;throw e;}finally{if(fd!==undefined)closeSync(fd);try{unlinkSync(temp);}catch(e){if(e.code!=='ENOENT')throw e;}}
  }};
 }
 export function assets(root){const base=resolve(root);return {fetch:async request=>{let path;try{path=decodeURIComponent(new URL(request.url).pathname);}catch{return new Response('Invalid path',{status:400});}const target=resolve(base,'.'+path);if(!target.startsWith(base+sep)||path.split('/').some(x=>x.startsWith('.')))return new Response('Not found',{status:404});try{return new Response(readFileSync(target));}catch{return new Response('Not found',{status:404});}}};}
