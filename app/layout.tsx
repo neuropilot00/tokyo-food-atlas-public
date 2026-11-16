@@ -7,5 +7,5 @@ export const metadata:Metadata={
 };
 export const viewport:Viewport={width:'device-width',initialScale:1,viewportFit:'cover',themeColor:'#174b3e'};
 export default function RootLayout({children}:{children:React.ReactNode}){
- return <html lang="ko"><head><link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.15.0/dist/maplibre-gl.css"/></head><body>{children}</body></html>;
+ return <html lang="ko"><head><link rel="stylesheet" href="/styles.css"/><link rel="stylesheet" href="/opening.css" data-opening-style="true"/><link rel="stylesheet" href="https://unpkg.com/maplibre-gl@6.15.0/dist/maplibre-gl.css"/></head><body>{children}</body></html>;
 }
