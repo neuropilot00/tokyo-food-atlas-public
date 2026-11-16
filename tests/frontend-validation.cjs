@@ -125,3 +125,18 @@ run(`state.finance={...defaults.KR,deposit:0,transfer:0,fitout:0,openingCosts:0,
 assert.match(node('#finance-output').innerHTML,/배정한 초기 자금이 0/);
 assert.doesNotMatch(node('#finance-output').innerHTML,/NaN|Infinity/);
 console.log('PASS: visual finance summaries preserve missing, zero and valid totals.');
+// The four-step property workflow links existing actions rather than a dead-end guide.
+const workflow=run('propertyWorkflow()');
+for(const action of ['property-discovery','finance-input','finance-result','compare-properties'])assert.match(workflow,new RegExp('data-action="'+action+'"'));
+assert.match(run('renderPlaces()'),/aria-label="매물 검토 순서"/);
+assert.match(workflow,/자동 매물 검색·공실 확인 서비스가 아닙니다/);
+run('openPropertyDiscovery()');
+assert.match(node('#dialog-body').innerHTML,/data-beta="add-property"/);
+assert.match(node('#dialog-body').innerHTML,/現在|현재 공실/);
+let focused=false;node('#f-rent').focus=()=>{focused=true};
+function workflowClick(action){const button={dataset:{action}};for(const fn of listeners.click)fn({target:{closest(selector){return selector.includes('[data-action]')?button:null}}});}
+workflowClick('finance-input');assert.equal(focused,true);
+workflowClick('finance-result');assert.ok(node('#finance-output').innerHTML.length>0);
+let compared=false;window.AtlasPropertyCompare={open(args){compared=args.properties.length===run('allProperties().length')}};
+workflowClick('compare-properties');assert.equal(compared,true);
+console.log('PASS property workflow: linked candidate/input/result/comparison actions and explicit source limitations');

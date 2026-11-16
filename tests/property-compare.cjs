@@ -13,3 +13,17 @@ assert.equal(analyze({rent:100,management:0,additionalMonthly:null}).monthly,nul
 assert.equal(analyze({sourceDate:'2026.11.15'},new Date('2026-11-16')).stale,false);
 assert.equal(analyze({sourceDate:'2026-02-30'},new Date('2026-11-16')).ageDays,null);
 console.log('PASS property comparison: unknown/zero/overflow/date and CSV injection guards');
+// The UI must expose all registered records, without an arbitrary selection cap.
+const nodes=new Map();const element=id=>{if(!nodes.has(id))nodes.set(id,{innerHTML:'',disabled:false});return nodes.get(id)};
+c.document={getElementById:element};c.URL=URL;
+const properties=Array.from({length:105},(_,i)=>({title:'Candidate '+i,localTitle:'Address',rent:i,management:0,deposit:0,transfer:0,source:'https://example.invalid/'+i,sourceDate:'2026-11-16'}));
+let dialog='';c.module.exports.open({properties,country:'JP',currency:'JPY',esc:s=>String(s??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;'),money:n=>'¥'+n,openDialog(title,body){dialog=body}});
+assert.equal((element('compare-choices').innerHTML.match(/data-compare-index=/g)||[]).length,105);
+assert.equal((element('property-comparison').innerHTML.match(/class="compare-card"/g)||[]).length,105);
+assert.doesNotMatch(dialog,/최대 3/);
+const toggle={dataset:{compareIndex:'104'},checked:false};element('compare-choices').onchange({target:toggle});
+assert.equal((element('property-comparison').innerHTML.match(/class="compare-card"/g)||[]).length,104);
+toggle.checked=true;element('compare-choices').onchange({target:toggle});
+assert.equal(toggle.checked,true);assert.equal((element('property-comparison').innerHTML.match(/class="compare-card"/g)||[]).length,105);
+assert.equal(properties.length,105,'Comparison must not mutate stored records');
+console.log('PASS comparison UI: over 100 records, unrestricted selection, deselection/reselection, preserved input');
