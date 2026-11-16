@@ -140,3 +140,13 @@ workflowClick('finance-result');assert.ok(node('#finance-output').innerHTML.leng
 let compared=false;window.AtlasPropertyCompare={open(args){compared=args.properties.length===run('allProperties().length')}};
 workflowClick('compare-properties');assert.equal(compared,true);
 console.log('PASS property workflow: linked candidate/input/result/comparison actions and explicit source limitations');
+
+// Sites must load the public visual rules, not only the base globals bundle.
+const siteLayout=fs.readFileSync(path.join(root,'app/layout.tsx'),'utf8');
+for(const file of ['styles.css','opening.css']){
+ assert.match(siteLayout,new RegExp('rel="stylesheet" href="/'+file.replace('.','\\.')+'"'));
+ assert.ok(fs.existsSync(path.join(root,'public',file)));
+}
+assert.match(siteLayout,/href="\/opening\.css" data-opening-style="true"/);
+assert.match(fs.readFileSync(path.join(root,'public/opening-ui.js'),'utf8'),/link\[data-opening-style\]/);
+console.log('PASS Sites stylesheet loading: public visual styles and deduplicated opening styles');
